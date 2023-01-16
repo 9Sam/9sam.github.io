@@ -1,0 +1,213 @@
+[
+   {
+      "id": 1,
+      "name": "UNOCELL",
+      "description": "Repair control system project developed with HTML5, PHP, Bootstrap and NodeJs Rest API.",
+      "points": [
+         "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
+         "Development and testing of the backend structure with PHP programming language.",
+         "Collaboration with the construction of documentation for both the administrator and the employee user."
+      ],
+      "front": "/img/unocell/login.png",
+      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "SQL", "SQL", "SQL", "SQL", "SQL"],
+      "images": [
+         {
+           "name": "Login",
+           "text": "Unocell Login",
+           "src": "/img/unocell/login.png",
+           "object": "login"
+         },
+         {
+           "name": "Forgot Password",
+           "text": "Unocell Forgot Password",
+           "src": "/img/unocell/forgot_password.png",
+           "object": "forgotPassword"
+         },
+         {
+           "name": "Create Order",
+           "text": "Unocell Create Order",
+           "src": "/img/unocell/create_order.png",
+           "object": "createOrder"
+         },
+         {
+           "name": "Orders In Process",
+           "text": "Unocell Orders In Process",
+           "src": "/img/unocell/orders_in_process.png",
+           "object": "ordersInProcess"
+         },
+         {
+           "name": "Finished Orders",
+           "text": "Unocell Finished Orders",
+           "src": "/img/unocell/finished_orders.png",
+           "object": "finishedOrders"
+         },
+         {
+           "name": "Create Inventory",
+           "text": "Unocell Create Inventory",
+           "src": "/img/unocell/create_inventory.png",
+           "object": "createInventory"
+         },
+         {
+           "name": "Edit Inventory",
+           "text": "Unocell Edit Inventory",
+           "src": "/img/unocell/edit_inventory.png",
+           "object": "editInventory"
+         },
+         {
+           "name": "Inventory Alert",
+           "text": "Unocell Inventory Alert",
+           "src": "/img/unocell/inventory_alert.png",
+           "object": "inventoryAlert"
+         },
+         {
+           "name": "Edit Amount",
+           "text": "Unocell Edit Amount",
+           "src": "/img/unocell/edit_amout.png",
+           "object": "editAmount"
+         },
+         {
+           "name": "Input Order Code",
+           "text": "Unocell Input Order Code",
+           "src": "/img/unocell/input_order_code.png",
+           "object": "inputOrderCode"
+         },
+         {
+           "name": "Assign Comissions",
+           "text": "Unocell Assign Comissions",
+           "src": "/img/unocell/asign_comissions.png",
+           "object": "assignComissions"
+         },
+         {
+           "name": "Comissions",
+           "text": "Unocell Comissions",
+           "src": "/img/unocell/comissions.png",
+           "object": "comissions"
+         },
+         {
+           "name": "Edit User",
+           "text": "Unocell Edit User",
+           "src": "/img/unocell/edit_user.png",
+           "object": "editUser"
+         },
+         {
+           "name": "Users Page",
+           "text": "Unocell Users Page",
+           "src": "/img/unocell/users_page.png",
+           "object": "usersPage"
+         },
+         {
+           "name": "Permissions",
+           "text": "Unocell Permissions",
+           "src": "/img/unocell/permissions.png",
+           "object": "permissions"
+         },
+         {
+           "name": "Logs",
+           "text": "Unocell Logs",
+           "src": "/img/unocell/logs.png",
+           "object": "logs"
+         },
+         {
+           "name": "Unocell Main Page",
+           "text": "Unocell Unocell Main Page",
+           "src": "/img/unocell/unocell_main_page.png",
+           "object": "unocellMainPage"
+         }
+      ],
+      "main": true,
+      "github": "",
+      "link": ""
+   },
+   {
+      "id": 2,
+      "name": "MEETI",
+      "description": "Pool straw meeting app, meant to organize events considering the different schedules of the users.",
+      "points": [
+         "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
+         "Development and testing of the backend structure with PHP programming language.",
+         "Collaboration with the construction of documentation for both the administrator and the employee user."
+      ],
+      "front": "/img/meeti/login.jpg",
+      "tags": ["Angular", "HTML5", "Bootstrap", "NodeJs", "ExpressJs", "MongoDB"],
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": true,
+      "github": "",
+      "link": ""
+   },
+   {
+      "id": 3,
+      "name": "Portfolio",
+      "description": "Web portfolio to display skills, abilities, and showcase some projects.",
+      "points": [
+         "Responsive layout made with tailwindcss utility classes.",
+         "Implementation of routes through react router dom version 6 and implementation of react router hash to create in-page navigation.",
+         "Animations added with AnimationCSS library and javascript."
+      ],
+      "front": "/img/portfolio/portfoliocover.png",
+      "tags": ["HTML5", "React", "ReactRouter6", "Tailwindcss"],
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": true,
+      "github": "https://github.com/9Sam/Meeti-api",
+      "link": "http://127.0.0.1:5173"
+   },
+   {
+      "id": 4,
+      "name": "MEETI",
+      "description": "Pool straw meeting app, meant to organize events considering the different schedules of the users.",
+      "points": [
+         "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
+         "Development and testing of the backend structure with PHP programming language.",
+         "Collaboration with the construction of documentation for both the administrator and the employee user."
+      ],
+      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "SQL"],
+      "front": "meetilogo",
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": false,
+      "github": "https://github.com/9Sam/Meeti-api",
+      "link": ""
+   },
+   {
+      "id": 5,
+      "name": "MEETI",
+      "description": "Pool straw meeting app, meant to organize events considering the different schedules of the users.",
+      "points": [
+         "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
+         "Development and testing of the backend structure with PHP programming language.",
+         "Collaboration with the construction of documentation for both the administrator and the employee user."
+      ],
+      "front": "meetilogo",
+      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "SQL"],
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": false,
+      "github": "https://github.com/9Sam/Meeti-api",
+      "link": ""
+   }
+]
