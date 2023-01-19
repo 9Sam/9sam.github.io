@@ -1,3 +1,4 @@
+import React from 'react';
 import SplideTech from "./features/SplideTech";
 import {
    frontendItems,
@@ -7,7 +8,7 @@ import {
 import Title from "./shared/Title";
 
 const h2Classes =
-   "text-dark dark:text-light-gray text-xl md:text-2xl font-bold py-5";
+   "text-dark dark:text-light-gray text-xl md:text-2xl font-bold py-5 md:h-20";
 
 function Skills() {
    return (
@@ -20,15 +21,15 @@ function Skills() {
             <SplideTech />
          </div>
          <div className="flex justify-center">
-            <div className="flex flex-wrap pt-10 md:pt-20 w-full max-w-4xl">
+            <div className="flex flex-wrap pt-10 md:pt-20 w-full max-w-5xl">
                <div className="w-1/2 md:w-1/3 p-2 text-center">
                   <h2 className={h2Classes}>FrontEnd</h2>
                   <div className="text-dark dark:text-light-gray text-lg md:text-xl">
                      {frontendItems.map((item, index) => {
                         return (
                            <div key={index} className="flex mt-3">
-                              <div className="my-auto w-1/2">
-                                 {item.component}
+                              <div className="my-auto w-1/2 -ml-6 pr-2">
+                                 {React.cloneElement(item.component,{className:"w-6 h-6 mx-auto float-right"})}
                               </div>
                               <div className="flex w-1/2">
                                  <a href={item.link} target="_blank">
@@ -46,8 +47,8 @@ function Skills() {
                      {backendItems.map((item, index) => {
                         return (
                            <div key={index} className="flex mt-3">
-                              <div className="my-auto w-1/2">
-                                 {item.component}
+                              <div className="my-auto w-1/2 -ml-6 pr-2">
+                                 {React.cloneElement(item.component,{className:"w-6 h-6 mx-auto float-right"})}
                               </div>
                               <div className="flex w-1/2">
                                  <a href={item.link} target="_blank">
@@ -65,8 +66,8 @@ function Skills() {
                      {othersItems.map((item, index) => {
                         return (
                            <div key={index} className="flex mt-3">
-                              <div className="my-auto w-1/2">
-                                 {item.component}
+                              <div className="my-auto w-1/2 -ml-6 pr-2">
+                                 {React.cloneElement(item.component,{className:"w-6 h-6 mx-auto float-right"})}
                               </div>
                               <div className="flex w-1/2">
                                  <a href={item.link} target="_blank">

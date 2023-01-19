@@ -28,12 +28,13 @@ function SplideTech() {
          <Splide
             options={{
                perPage: 3,
-               // type: "loop",
+               type: "loop",
                focus: "center",
-               rewind: true,
+               rewind: false,
                autoplay: true,
                interval: 5000,
                width: 800,
+               
             }}
          >
             <SplideSlide id="siangular" className="mx-auto">

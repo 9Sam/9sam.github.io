@@ -61,7 +61,7 @@ function ProjectDetail() {
                <div className="text-center">{description}</div>
                <div className="flex flex-wrap max-w-3xl mx-auto justify-center gap-2 my-4">
                   {tags?.map((tag: string, index: number) => {
-                     return <Tag key={index}>{tag}</Tag>;
+                     return <Tag size="w-4 h-4" key={index}>{tag}</Tag>;
                   })}
                </div>
                <div className="flex justify-center gap-2 my-10">

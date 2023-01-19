@@ -11,9 +11,10 @@ import {
    SiMongodb,
    SiMysql,
    SiFigma,
+   SiPhp
 } from "react-icons/si";
 
-const iconClasses = "mr-8 w-6 h-6 mx-auto float-right";
+const iconClasses = "w-4 h-4 mx-auto float-right";
 
 export const frontendItems = [
    {
@@ -80,7 +81,7 @@ export const backendItems = [
       ),
    },
    {
-      name: "Express",
+      name: "ExpressJs",
       link: "https://expressjs.com/es/",
       component: (
          <SiExpress
@@ -126,6 +127,16 @@ export const backendItems = [
          <SiJava
             className={iconClasses}
             style={{ fill: "red" }}
+         />
+      ),
+   },
+   {
+      name: "Php",
+      link: "https://www.php.com/",
+      component: (
+         <SiPhp
+            className={iconClasses}
+            style={{ fill: "#777BB3" }}
          />
       ),
    },

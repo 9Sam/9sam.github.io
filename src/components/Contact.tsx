@@ -35,7 +35,7 @@ function Contact() {
     }
 
    return (
-      <section id="contact" className="flex-1 max-w-4xl md:flex md:flex-col mx-auto my-20 p-5 md:p-10 lg:p-0 dark:bg-dark">
+      <section id="contact" className="flex-1 max-w-5xl md:flex md:flex-col mx-auto my-20 p-5 md:p-10 lg:p-0 dark:bg-dark">
          <Title title="Contact" />
          <form ref={formRef} onSubmit={sendEmail}>
             <div className="mb-6">
@@ -70,7 +70,7 @@ function Contact() {
                ></textarea>
             </div>
             <div className="text-center my-10">
-               <Button type="primary" htmlType="submit">Submit</Button>
+               <Button type="primary" htmlType="submit">Send email</Button>
             </div>
          </form>
          <ContactIcons center={true} />
