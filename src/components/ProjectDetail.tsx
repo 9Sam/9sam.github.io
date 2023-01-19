@@ -12,6 +12,7 @@ import Button from "./shared/Button";
 import Tag from "./shared/Tag";
 import FsLightbox from "fslightbox-react";
 const LightBox = (FsLightbox as any).default ? (FsLightbox as any).default : FsLightbox;
+
 function ProjectDetail() {
    const navigate = useNavigate();
    // FIXME: There is something werid with the state variables
