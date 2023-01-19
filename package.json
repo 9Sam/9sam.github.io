@@ -1,15 +1,15 @@
 {
    "name": "react-portfolio-ts",
    "private": true,
-   "homepage": "https://9Sam.github.io",
+   "homepage": "https://9sam.github.io",
    "version": "0.0.0",
    "type": "module",
    "scripts": {
       "dev": "vite",
-      "build": "tsc && vite build",
+      "build": "tsc && vite build --base=./",
       "preview": "vite preview",
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
+      "deploy": "gh-pages -d dist"
    },
    "dependencies": {
       "@emailjs/browser": "^3.10.0",
@@ -17,6 +17,7 @@
       "animate.css": "^4.1.1",
       "aos": "^2.3.4",
       "fslightbox-react": "^1.6.2-2",
+      "gh-pages": "^4.0.0",
       "react": "^18.2.0",
       "react-animation-on-scroll": "^5.1.0",
       "react-dom": "^18.2.0",
