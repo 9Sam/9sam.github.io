@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ImageI } from "../interfaces/Project";
 import {
    IoIosArrowDropdownCircle,
@@ -8,9 +8,10 @@ import {
 import { AiFillCode, AiFillCheckCircle } from "react-icons/ai";
 import { VscPreview } from "react-icons/vsc";
 import Title from "./shared/Title";
-import FsLightbox from "fslightbox-react";
 import Button from "./shared/Button";
 import Tag from "./shared/Tag";
+import FsLightbox from "fslightbox-react";
+const LightBox = (FsLightbox as any).default ? (FsLightbox as any).default : FsLightbox;
 
 function ProjectDetail() {
    const navigate = useNavigate();
@@ -143,7 +144,7 @@ function ProjectDetail() {
                            );
                         })}
 
-                        <FsLightbox
+                        <LightBox
                            toggler={lightboxController.toggler}
                            sources={imagesSources}
                            slide={lightboxController.slide}
