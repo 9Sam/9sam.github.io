@@ -1,7 +1,7 @@
 import Title from "./shared/Title";
 import Button from "./shared/Button";
-import ContactIcons from "./features/ContactIcons";
 import { useEffect, useRef, useState } from "react";
+import ContactIcons from "./features/ContactIcons";
 import Alert from "./features/Alert";
 import emailjs from '@emailjs/browser';
 
