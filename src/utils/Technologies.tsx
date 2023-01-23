@@ -11,7 +11,8 @@ import {
    SiMongodb,
    SiMysql,
    SiFigma,
-   SiPhp
+   SiPhp,
+   SiSass
 } from "react-icons/si";
 
 const iconClasses = "w-4 h-4 mx-auto float-right";
@@ -20,6 +21,7 @@ export const frontendItems = [
    {
       name: "HTML5",
       link: "https://www.xataka.com/basics/que-html5-que-novedades-ofrece",
+      skill: true,
       component: (
          <SiHtml5
             className={iconClasses}
@@ -30,6 +32,7 @@ export const frontendItems = [
    {
       name: "React",
       link: "https://es.reactjs.org/",
+      skill: true,
       component: (
          <SiReact
             className={iconClasses}
@@ -40,6 +43,7 @@ export const frontendItems = [
    {
       name: "Angular",
       link: "https://angular.io/",
+      skill: true,
       component: (
          <SiAngular
             className={iconClasses}
@@ -50,6 +54,7 @@ export const frontendItems = [
    {
       name: "Bootstrap",
       link: "https://getbootstrap.com/docs/5.2/getting-started/introduction/",
+      skill: true,
       component: (
          <SiBootstrap
             className={iconClasses}
@@ -60,10 +65,22 @@ export const frontendItems = [
    {
       name: "Tailwindcss",
       link: "https://tailwindcss.com/",
+      skill: true,
       component: (
          <SiTailwindcss
             className={iconClasses}
             style={{ fill: "#38BDF8" }}
+         />
+      ),
+   },
+   {
+      name: "Sass",
+      link: "https://sass-lang.com/",
+      skill: false,
+      component: (
+         <SiSass
+            className={iconClasses}
+            style={{ fill: "#BF4080" }}
          />
       ),
    },
@@ -73,6 +90,7 @@ export const backendItems = [
    {
       name: "NodeJS",
       link: "https://nodejs.org/en/",
+      skill: true,
       component: (
          <SiNodedotjs
             className={iconClasses}
@@ -83,6 +101,7 @@ export const backendItems = [
    {
       name: "ExpressJs",
       link: "https://expressjs.com/es/",
+      skill: true,
       component: (
          <SiExpress
             className={iconClasses}
@@ -93,6 +112,7 @@ export const backendItems = [
    {
       name: "Typescript",
       link: "https://www.typescriptlang.org/",
+      skill: true,
       component: (
          <SiTypescript
             className={iconClasses}
@@ -103,6 +123,7 @@ export const backendItems = [
    {
       name: "MySQL",
       link: "https://www.mysql.com/",
+      skill: true,
       component: (
          <SiMysql
             className={iconClasses}
@@ -113,6 +134,7 @@ export const backendItems = [
    {
       name: "MongoDB",
       link: "https://www.mongodb.com/",
+      skill: true,
       component: (
          <SiMongodb
             className={iconClasses}
@@ -123,6 +145,7 @@ export const backendItems = [
    {
       name: "Java",
       link: "https://www.java.com/",
+      skill: true,
       component: (
          <SiJava
             className={iconClasses}
@@ -133,6 +156,7 @@ export const backendItems = [
    {
       name: "Php",
       link: "https://www.php.com/",
+      skill: true,
       component: (
          <SiPhp
             className={iconClasses}
@@ -146,6 +170,7 @@ export const othersItems = [
    {
       name: "Figma",
       link: "https://www.figma.com/",
+      skill: true,
       component: (
          <SiFigma
             className={iconClasses}

@@ -1,17 +1,11 @@
 import code from "/coding_1280.jpg";
 import Title from "./shared/Title";
 
-const text = `I am Samuel Casco, a full-stack web developer oriented to the JavaScript ecosystem. I love programming because of the satisfaction of creating complex and interesting things and generating solutions that could improve the user experience and life in general. Some of my hobbies are listening to music, drawing, playing the guitar, and enjoying nature.`;
+const text = `I am Samuel Casco, a full-stack web developer oriented to the JavaScript ecosystem. I love programming because of the satisfaction of creating complex and interesting things and generating solutions that could improve the user experience and life in general. Some of my hobbies are listening to music, drawing, reading, playing the guitar, and enjoying nature.`;
 
 function About() {
-
-   const textWithStyles = text.replace(
-      "javascript",
-      `<span class="text-primary">javascript</span>`
-   );
-
    return (
-      <section id="about" className="flex-1 md:flex md:flex-col mx-auto my-20 p-5 md:p-10 ">
+      <section id="about" className="flex-1 md:flex md:flex-col mx-auto my-20 p-5 ">
          <Title title="About me"/>
          <div className="text-dark text-center">
             <div className="">

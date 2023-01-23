@@ -24,14 +24,14 @@ function ProjectCard({ project }: projectT) {
    if (project) {
       return (
          <div className="max-w-sm bg-white rounded-lg h-auto shadow-md dark:bg-dark dark:border dark:border-primary dark:border-opacity-50 ">
-            <a className="" href="" onClick={() => setState(true)}>
+            <div className="cursor-pointer" onClick={() => setState(true)}>
                <img
                   className="rounded-t-lg h-40 object-cover w-full"
                   // src={getImageByKey((project.front) ? project.front : "")}
                   src={project.front}
                   alt=""
                />
-            </a>
+            </div>
             <div className="p-5 md:h-64">
                <a href="#">
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-light-gray">

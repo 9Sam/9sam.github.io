@@ -25,9 +25,9 @@ function Skills() {
                <div className="w-1/2 md:w-1/3 p-2 text-center">
                   <h2 className={h2Classes}>FrontEnd</h2>
                   <div className="text-dark dark:text-light-gray text-lg md:text-xl">
-                     {frontendItems.map((item, index) => {
+                     {frontendItems.filter(x => x.skill === true).map((item, index) => {
                         return (
-                           <div key={index} className="flex mt-3">
+                           <div key={index} className="flex mt-3 hover:text-primary transition ease-out duration-200">
                               <div className="my-auto w-1/2 -ml-6 pr-2">
                                  {React.cloneElement(item.component,{className:"w-6 h-6 mx-auto float-right"})}
                               </div>
@@ -44,9 +44,9 @@ function Skills() {
                <div className="w-1/2 md:w-1/3 p-2 text-center">
                   <h2 className={h2Classes}>Backend</h2>
                   <div className="text-dark dark:text-light-gray text-lg md:text-xl">
-                     {backendItems.map((item, index) => {
+                     {backendItems.filter(x => x.skill === true).map((item, index) => {
                         return (
-                           <div key={index} className="flex mt-3">
+                           <div key={index} className="flex mt-3 hover:text-primary transition ease-out duration-200">
                               <div className="my-auto w-1/2 -ml-6 pr-2">
                                  {React.cloneElement(item.component,{className:"w-6 h-6 mx-auto float-right"})}
                               </div>
@@ -63,9 +63,9 @@ function Skills() {
                <div className="w-1/2 md:w-1/3 p-2 text-center">
                   <h2 className={h2Classes}>Other technologies and tools</h2>
                   <div className="text-dark dark:text-light-gray text-lg md:text-xl">
-                     {othersItems.map((item, index) => {
+                     {othersItems.filter(x => x.skill === true).map((item, index) => {
                         return (
-                           <div key={index} className="flex mt-3">
+                           <div key={index} className="flex mt-3 hover:text-primary transition ease-out duration-200">
                               <div className="my-auto w-1/2 -ml-6 pr-2">
                                  {React.cloneElement(item.component,{className:"w-6 h-6 mx-auto float-right"})}
                               </div>

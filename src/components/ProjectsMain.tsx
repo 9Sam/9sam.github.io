@@ -20,7 +20,7 @@ function ProjectsMain() {
    },[state])
 
    return (
-      <section id="projects" className="flex-1 max-w-7xl md:flex md:flex-col my-20 mx-auto p-5 md:p-10 bg-white dark:bg-dark">
+      <section id="projects" className="flex-1 max-w-7xl md:flex md:flex-col my-20 mx-auto p-5 bg-white dark:bg-dark">
          <Title title="Projects" />
          <div className="flex flex-wrap justify-center lg:justify-between gap-3 gap-y-5 bg-gd">
             {data.filter(project => project.main === true).map((project:any, index) => {

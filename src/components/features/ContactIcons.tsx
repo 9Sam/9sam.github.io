@@ -27,7 +27,7 @@ function ContactIcons({center}:contactT) {
             </a>
             <a
                className="text-light"
-               href="mailto:sacasco99@outlook.com"
+               href="mailto:sacasco99@gmail.com"
                target="_blank"
             >
                <BsFillEnvelopeFill className={iconClasses} />

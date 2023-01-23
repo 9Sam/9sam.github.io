@@ -27,7 +27,7 @@ function Tag({children, size}:PropsI) {
    }
 
   return (
-   <div className='rounded shadow p-1 flex justify-center bg-white border border-secondary text-dark bg-opacity-90  dark:bg-dark dark:text-light-gray text-xs opacity-8 dark:opacity-100'>
+   <div className='rounded shadow p-1 flex justify-center bg-secondary bg-opacity-10 text-dark dark:border dark:border-secondary dark:border-opacity-70  dark:bg-dark dark:text-light-gray text-xs opacity-8 dark:opacity-100'>
       <div className='w-auto mr-1'>
          {React.cloneElement(handleIcon(), {className:size})}
       </div>

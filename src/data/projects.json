@@ -9,7 +9,7 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/unocell/login.png",
-      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "SQL", "SQL", "SQL", "SQL", "SQL"],
+      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "MySql"],
       "images": [
          {
            "name": "Login",
@@ -128,7 +128,7 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": ["Angular", "HTML5", "Bootstrap", "NodeJs", "ExpressJs", "MongoDB", "tec", "tec", "tec", "tec"],
+      "tags": ["Angular", "HTML5", "Bootstrap", "Sass"],
       "images": [
          {
             "name": "",
@@ -138,11 +138,33 @@
          }
       ],
       "main": true,
-      "github": "",
+      "github": "https://github.com/9Sam/Meeti",
       "link": ""
    },
    {
       "id": 3,
+      "name": "MEETI API",
+      "description": "Backend functionality for the pool straw meeting app can be achieved through the implementation of an API using Node.js and a non-relational database such as MongoDB.",
+      "points": [
+         "Creation of structure and scallable storage collections",
+         "Creation of api endpoints and its respective validations"
+      ],
+      "front": "/img/meeti/login.jpg",
+      "tags": ["NodeJs", "ExpressJs", "MongoDB"],
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": false,
+      "github": "https://github.com/9Sam/Meeti-api",
+      "link": ""
+   },
+   {
+      "id": 4,
       "name": "Portfolio",
       "description": "Web portfolio to display skills, abilities, and showcase some projects.",
       "points": [
@@ -162,52 +184,6 @@
       ],
       "main": true,
       "github": "https://github.com/9Sam/Meeti-api",
-      "link": "http://127.0.0.1:5173"
-   },
-   {
-      "id": 4,
-      "name": "MEETI",
-      "description": "Pool straw meeting app, meant to organize events considering the different schedules of the users.",
-      "points": [
-         "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
-         "Development and testing of the backend structure with PHP programming language.",
-         "Collaboration with the construction of documentation for both the administrator and the employee user."
-      ],
-      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "SQL"],
-      "front": "meetilogo",
-      "images": [
-         {
-            "name": "",
-            "text": "",
-            "src": "",
-            "object": ""
-         }
-      ],
-      "main": false,
-      "github": "https://github.com/9Sam/Meeti-api",
-      "link": ""
-   },
-   {
-      "id": 5,
-      "name": "MEETI",
-      "description": "Pool straw meeting app, meant to organize events considering the different schedules of the users.",
-      "points": [
-         "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
-         "Development and testing of the backend structure with PHP programming language.",
-         "Collaboration with the construction of documentation for both the administrator and the employee user."
-      ],
-      "front": "meetilogo",
-      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "SQL"],
-      "images": [
-         {
-            "name": "",
-            "text": "",
-            "src": "",
-            "object": ""
-         }
-      ],
-      "main": false,
-      "github": "https://github.com/9Sam/Meeti-api",
-      "link": ""
+      "link": "https://9sam.github.io"
    }
 ]
