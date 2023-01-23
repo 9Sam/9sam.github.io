@@ -26,7 +26,7 @@ function App() {
          <BrowserRouter>
             <main
                className={`flex flex-col min-h-screen ${
-                  darkMode ? "dark bg-dark" : ""
+                  darkMode ? "dark bg-dark" : "bg-white"
                }`}
             >
                <Navbar changeMode={changeMode} darkMode={darkMode} />

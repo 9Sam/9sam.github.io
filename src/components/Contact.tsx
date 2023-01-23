@@ -17,7 +17,6 @@ function Contact() {
       .then((result:any) => {
             setIsOpen(true);
             window.scrollTo(0, document.body.scrollHeight);
-            console.log(result.text);
         }, (error) => {});
 
       formRef.current?.reset();
@@ -37,7 +36,7 @@ function Contact() {
    return (
       <section id="contact" className="flex-1 max-w-5xl md:flex md:flex-col mx-auto my-20 p-5 md:p-10 lg:p-0 dark:bg-dark">
          <Title title="Contact" />
-         <form ref={formRef} onSubmit={sendEmail}>
+         <form ref={formRef} onSubmit={sendEmail} className="">
             <div className="mb-6">
                <label
                   htmlFor="email"
@@ -49,7 +48,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="bg-gray-50 border dark:border-primary text-dark text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 shadow text-dark text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
                   placeholder="name@gmail.com"
                   required
                />
@@ -65,7 +64,7 @@ function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="bg-gray-50 border dark:border-primary text-gray-900 text-sm rounded-lg focus:border-primary block w-full p-2.5 dark:bg-white dark:placeholder-white dark:text-dark dark:focus:ring-primary dark:focus:border-primary"
+                  className="bg-gray-50 shadow text-gray-900 text-sm rounded-lg focus:ring-primary block w-full p-2.5 dark:bg-white dark:placeholder-white dark:text-dark"
                   required
                ></textarea>
             </div>

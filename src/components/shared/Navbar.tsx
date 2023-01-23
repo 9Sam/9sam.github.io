@@ -20,14 +20,15 @@ function Navbar({ changeMode, darkMode }: any) {
 
    const scrollWithOffset = (el:HTMLElement, isHome: boolean) => {
       const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-      const yOffset = isHome ? 0 : 50;
+      let yOffset = isHome ? 0 : 60;
+      if(window.innerWidth <= 768) yOffset = 0;
       window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
    };
 
    const activeLink = (isActive: boolean) => {
       return isActive
          ? 'text-light-gray md:bg-transparent md:text-white md:p-0 dark:text-light-gray"'
-         : "my-auto text-md text-dark hover:bg-gray-50 md:text-dark md:border-0 md:hover:text-primary md:p-0 dark:text-light-gray md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-light-gray dark:border-light-gray transition ease-out duration-500";
+         : "my-auto text-md text-dark hover:bg-gray-50 md:text-dark md:border-0 md:hover:text-primary md:p-0 dark:text-light-gray md:dark:hover:text-primary dark:hover:bg-gray-700 dark:hover:text-light-gray dark:border-light-gray";
    };
 
    const handleOpen = () => {
