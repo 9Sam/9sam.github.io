@@ -1,33 +1,41 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Nunito", sans-serif;
+   /* border: 1px solid red !important; */
+}
+
 .splide__arrow > svg {
-  fill: #20ffa2 !important;
+   fill: #20ffa2 !important;
 }
 
 .splide__pagination__page {
-  background: #474747 !important;
+   background: #474747 !important;
 }
 
 .splide__pagination__page.is-active {
-  background: #20ffa2 !important;
+   background: #20ffa2 !important;
 }
 
 html,
 body,
 main {
-  overflow-x: hidden;
-  overflow-y: auto !important;
+   overflow-x: hidden;
+   overflow-y: auto !important;
 }
 
 #root {
-  overflow: hidden;
-  position: relative;
+   overflow: hidden;
+   position: relative;
 }
 
 nav {
-  transition: opacity 600ms, visibility 600ms;
+   transition: opacity 600ms, visibility 600ms;
 }
 
 html {
-  scroll-behavior: smooth !important;
+   scroll-behavior: smooth !important;
 }
 /* 
 html {

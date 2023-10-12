@@ -9,109 +9,115 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/unocell/login.png",
-      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "MySql"],
+      "tags": [
+         "HTML5",
+         "Bootstrap",
+         "Php",
+         "NodeJs",
+         "MySql"
+      ],
       "images": [
          {
-           "name": "Login",
-           "text": "Unocell Login",
-           "src": "/img/unocell/login.png",
-           "object": "login"
+            "name": "Login",
+            "text": "Unocell Login",
+            "src": "/img/unocell/login.png",
+            "object": "login"
          },
          {
-           "name": "Forgot Password",
-           "text": "Unocell Forgot Password",
-           "src": "/img/unocell/forgot_password.png",
-           "object": "forgotPassword"
+            "name": "Forgot Password",
+            "text": "Unocell Forgot Password",
+            "src": "/img/unocell/forgot_password.png",
+            "object": "forgotPassword"
          },
          {
-           "name": "Create Order",
-           "text": "Unocell Create Order",
-           "src": "/img/unocell/create_order.png",
-           "object": "createOrder"
+            "name": "Create Order",
+            "text": "Unocell Create Order",
+            "src": "/img/unocell/create_order.png",
+            "object": "createOrder"
          },
          {
-           "name": "Orders In Process",
-           "text": "Unocell Orders In Process",
-           "src": "/img/unocell/orders_in_process.png",
-           "object": "ordersInProcess"
+            "name": "Orders In Process",
+            "text": "Unocell Orders In Process",
+            "src": "/img/unocell/orders_in_process.png",
+            "object": "ordersInProcess"
          },
          {
-           "name": "Finished Orders",
-           "text": "Unocell Finished Orders",
-           "src": "/img/unocell/finished_orders.png",
-           "object": "finishedOrders"
+            "name": "Finished Orders",
+            "text": "Unocell Finished Orders",
+            "src": "/img/unocell/finished_orders.png",
+            "object": "finishedOrders"
          },
          {
-           "name": "Create Inventory",
-           "text": "Unocell Create Inventory",
-           "src": "/img/unocell/create_inventory.png",
-           "object": "createInventory"
+            "name": "Create Inventory",
+            "text": "Unocell Create Inventory",
+            "src": "/img/unocell/create_inventory.png",
+            "object": "createInventory"
          },
          {
-           "name": "Edit Inventory",
-           "text": "Unocell Edit Inventory",
-           "src": "/img/unocell/edit_inventory.png",
-           "object": "editInventory"
+            "name": "Edit Inventory",
+            "text": "Unocell Edit Inventory",
+            "src": "/img/unocell/edit_inventory.png",
+            "object": "editInventory"
          },
          {
-           "name": "Inventory Alert",
-           "text": "Unocell Inventory Alert",
-           "src": "/img/unocell/inventory_alert.png",
-           "object": "inventoryAlert"
+            "name": "Inventory Alert",
+            "text": "Unocell Inventory Alert",
+            "src": "/img/unocell/inventory_alert.png",
+            "object": "inventoryAlert"
          },
          {
-           "name": "Edit Amount",
-           "text": "Unocell Edit Amount",
-           "src": "/img/unocell/edit_amout.png",
-           "object": "editAmount"
+            "name": "Edit Amount",
+            "text": "Unocell Edit Amount",
+            "src": "/img/unocell/edit_amout.png",
+            "object": "editAmount"
          },
          {
-           "name": "Input Order Code",
-           "text": "Unocell Input Order Code",
-           "src": "/img/unocell/input_order_code.png",
-           "object": "inputOrderCode"
+            "name": "Input Order Code",
+            "text": "Unocell Input Order Code",
+            "src": "/img/unocell/input_order_code.png",
+            "object": "inputOrderCode"
          },
          {
-           "name": "Assign Comissions",
-           "text": "Unocell Assign Comissions",
-           "src": "/img/unocell/asign_comissions.png",
-           "object": "assignComissions"
+            "name": "Assign Comissions",
+            "text": "Unocell Assign Comissions",
+            "src": "/img/unocell/asign_comissions.png",
+            "object": "assignComissions"
          },
          {
-           "name": "Comissions",
-           "text": "Unocell Comissions",
-           "src": "/img/unocell/comissions.png",
-           "object": "comissions"
+            "name": "Comissions",
+            "text": "Unocell Comissions",
+            "src": "/img/unocell/comissions.png",
+            "object": "comissions"
          },
          {
-           "name": "Edit User",
-           "text": "Unocell Edit User",
-           "src": "/img/unocell/edit_user.png",
-           "object": "editUser"
+            "name": "Edit User",
+            "text": "Unocell Edit User",
+            "src": "/img/unocell/edit_user.png",
+            "object": "editUser"
          },
          {
-           "name": "Users Page",
-           "text": "Unocell Users Page",
-           "src": "/img/unocell/users_page.png",
-           "object": "usersPage"
+            "name": "Users Page",
+            "text": "Unocell Users Page",
+            "src": "/img/unocell/users_page.png",
+            "object": "usersPage"
          },
          {
-           "name": "Permissions",
-           "text": "Unocell Permissions",
-           "src": "/img/unocell/permissions.png",
-           "object": "permissions"
+            "name": "Permissions",
+            "text": "Unocell Permissions",
+            "src": "/img/unocell/permissions.png",
+            "object": "permissions"
          },
          {
-           "name": "Logs",
-           "text": "Unocell Logs",
-           "src": "/img/unocell/logs.png",
-           "object": "logs"
+            "name": "Logs",
+            "text": "Unocell Logs",
+            "src": "/img/unocell/logs.png",
+            "object": "logs"
          },
          {
-           "name": "Unocell Main Page",
-           "text": "Unocell Unocell Main Page",
-           "src": "/img/unocell/unocell_main_page.png",
-           "object": "unocellMainPage"
+            "name": "Unocell Main Page",
+            "text": "Unocell Unocell Main Page",
+            "src": "/img/unocell/unocell_main_page.png",
+            "object": "unocellMainPage"
          }
       ],
       "main": true,
@@ -120,15 +126,21 @@
    },
    {
       "id": 2,
-      "name": "MEETI",
-      "description": "Pool straw meeting app, meant to organize events considering the different schedules of the users.",
+      "name": "Straw Poll Meeting App",
+      "description": "Straw Poll Meeting App, meant to organize events considering the different schedules of the users.",
       "points": [
          "Management of the development team, assignment and scheduling of tasks, evaluation of results and decision making.",
          "Development and testing of the backend structure with PHP programming language.",
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": ["Angular", "HTML5", "Bootstrap", "Sass"],
+      "tags": [
+         "React",
+         "Redux",
+         "Tailwindcss",
+         "HTML5",
+         "MUI"
+      ],
       "images": [
          {
             "name": "",
@@ -138,19 +150,76 @@
          }
       ],
       "main": true,
-      "github": "https://github.com/9Sam/Meeti",
+      "github": "https://github.com/9Sam/Straw_poll_meeting_app/tree/master/frontend",
       "link": ""
    },
    {
       "id": 3,
-      "name": "MEETI API",
+      "name": "Straw pool app API",
       "description": "Backend functionality for the pool straw meeting app can be achieved through the implementation of an API using Node.js and a non-relational database such as MongoDB.",
       "points": [
          "Creation of structure and scallable storage collections",
          "Creation of api endpoints and its respective validations"
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": ["NodeJs", "ExpressJs", "MongoDB"],
+      "tags": [
+         "NodeJs",
+         "ExpressJs",
+         "MongoDB"
+      ],
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": false,
+      "github": "https://github.com/9Sam/Straw_poll_meeting_app/tree/master/api",
+      "link": ""
+   },
+   {
+      "id": 4,
+      "name": "Portfolio",
+      "description": "Web portfolio to display skills, abilities, and showcase my projects.",
+      "points": [
+         "Responsive layout made with tailwindcss utility classes.",
+         "Implementation of routes through react router dom version 6 and implementation of react router hash to create in-page navigation.",
+         "Animations added with AnimationCSS library and javascript."
+      ],
+      "front": "/img/portfolio/portfoliocover.png",
+      "tags": [
+         "HTML5",
+         "React",
+         "ReactRouterV6",
+         "Tailwindcss"
+      ],
+      "images": [
+         {
+            "name": "",
+            "text": "",
+            "src": "",
+            "object": ""
+         }
+      ],
+      "main": true,
+      "github": "https://github.com/9Sam/Meeti-api",
+      "link": "https://9sam.github.io"
+   },
+   {
+      "id": 5,
+      "name": "AOE Voice Assistant",
+      "description": "Voice assitant to get information in real time for the game Age of Empires II Definitive Edition",
+      "points": [
+         "Speech to text implemented with native browser API.",
+         "Text to speech implemented with native browser API."
+      ],
+      "front": "/img/aoe_assistant/assistant.jpg",
+      "tags": [
+         "Javascript",
+         "CSS"
+      ],
       "images": [
          {
             "name": "",
@@ -161,19 +230,22 @@
       ],
       "main": false,
       "github": "https://github.com/9Sam/Meeti-api",
-      "link": ""
+      "link": "https://9sam.github.io"
    },
    {
-      "id": 4,
-      "name": "Portfolio",
-      "description": "Web portfolio to display skills, abilities, and showcase some projects.",
+      "id": 6,
+      "name": "Streaming Platform Clone",
+      "description": "Clone of a streaming application to watch content online.",
       "points": [
-         "Responsive layout made with tailwindcss utility classes.",
-         "Implementation of routes through react router dom version 6 and implementation of react router hash to create in-page navigation.",
-         "Animations added with AnimationCSS library and javascript."
+         "Responsive layout made with tailwindcss utility classes and css3 properties."
       ],
       "front": "/img/portfolio/portfoliocover.png",
-      "tags": ["HTML5", "React", "ReactRouter6", "Tailwindcss"],
+      "tags": [
+         "React",
+         "NextJs",
+         "NextAuth",
+         "Tailwindcss"
+      ],
       "images": [
          {
             "name": "",
@@ -182,7 +254,7 @@
             "object": ""
          }
       ],
-      "main": true,
+      "main": false,
       "github": "https://github.com/9Sam/Meeti-api",
       "link": "https://9sam.github.io"
    }

@@ -14,14 +14,13 @@ function Home() {
    }, []);
 
    useEffect(() => {
-      let leftTriangle = document.getElementById("left-triangle");
-      let rightTriangle = document.getElementById("right-triangle");
+      const leftTriangle = document.getElementById("left-triangle");
+      const rightTriangle = document.getElementById("right-triangle");
 
       var lastScrollTop = 0;
 
       const handleScroll = () => {
-         // or window.addEventListener("scroll"....
-         var st = window.scrollY || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+         var st = window.scrollY || document.documentElement.scrollTop;
          if (st > lastScrollTop) {
             leftTriangle?.classList.remove("animate__delay-1s");
             rightTriangle?.classList.remove("animate__delay-1s");
@@ -31,7 +30,7 @@ function Home() {
             leftTriangle?.classList.remove("animate__fadeOutLeft");
             rightTriangle?.classList.remove("animate__fadeOutRight");
          }
-         lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+         lastScrollTop = st <= 0 ? 0 : st;
       };
       window.addEventListener("scroll", handleScroll);
 
@@ -41,12 +40,14 @@ function Home() {
    }, []);
 
    return (
-      <div id="home" className="text-dark bg-white dark:bg-dark dark:text-white">
-         <header className="flex h-screen w-screen relative p-5 md:p-20">
+      <div className="text-dark bg-white dark:bg-dark dark:text-white">
+         <header
+            className="flex h-screen max-h-screen w-screen relative p-5 md:p-20"
+            data-section
+            id="home"
+         >
             {/* Bottom */}
-            <div
-               className="left-triangle animation absolute bottom-[-18px] md:bottom-[-35px] left-0"
-            >
+            <div className="left-triangle animation absolute bottom-[-18px] md:bottom-[-35px] left-0">
                <img
                   className="animate__animated animate__fadeInLeft animate__delay-1s w-40 h-40 md:w-80 md:h-80"
                   id="left-triangle"
@@ -54,7 +55,11 @@ function Home() {
                   alt=""
                />
             </div>
-            <div className="flex relative my-auto w-full justify-center">
+            <section
+               className="flex relative w-full justify-center"
+               data-section
+               id="home"
+            >
                <div className="flex flex-row">
                   <div className="w-100 animate__animated animate__rotateIn">
                      <img
@@ -63,21 +68,19 @@ function Home() {
                         alt=""
                      />
                   </div>
-                  <div
-                     className="animate__animated animate__fadeIn animate__delay-1s my-auto ml-6 md:ml-10 space-y-2"
-                  >
+                  <div className="animate__animated animate__fadeIn animate__delay-1s my-auto ml-6 md:ml-10 space-y-2">
                      <h2 className="text-light text-xl md:text-4xl fs-1 fs-sm-3">
                         Hi there!, my name is
                         <span className="text-secondary">
                            {" "}
                            Samuel Casco{" "}
                         </span>{" "}
-                        and I am a fullstack web developer
+                        and I am a Full-Stack web developer
                      </h2>
                      <ContactIcons />
                   </div>
                </div>
-            </div>
+            </section>
             {/* Top */}
             <div className="right-triangle animation absolute top-[-38px] md:top-5 right-0">
                <img

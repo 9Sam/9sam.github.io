@@ -23,7 +23,7 @@ function ProjectCard({ project }: projectT) {
 
    if (project) {
       return (
-         <div className="max-w-sm bg-white rounded-lg h-auto shadow-md dark:bg-dark dark:border dark:border-primary dark:border-opacity-50 ">
+         <div className="max-w-sm bg-white rounded-lg h-auto shadow-md dark:bg-dark dark:border dark:border-primary dark:border-opacity-50 z-10">
             <div className="cursor-pointer" onClick={() => setState(true)}>
                <img
                   className="rounded-t-lg h-40 object-cover w-full"

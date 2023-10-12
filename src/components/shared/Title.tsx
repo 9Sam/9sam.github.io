@@ -1,10 +1,10 @@
 type TitleT = {
-   title: string
-}
+   title: string;
+};
 
-function Title({title}: TitleT) {
+function Title({ title }: TitleT) {
    return (
-      <div className="my-10">
+      <div className="mb-12">
          <h2 className="text-center text-2xl md:text-4xl mt-16 py-5 dark:text-light-gray">
             {title}
          </h2>

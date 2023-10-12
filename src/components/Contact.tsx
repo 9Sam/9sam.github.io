@@ -3,40 +3,65 @@ import Button from "./shared/Button";
 import { useEffect, useRef, useState } from "react";
 import ContactIcons from "./features/ContactIcons";
 import Alert from "./features/Alert";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import { sectionClasses } from "../utils/themeClasses";
 
 function Contact() {
    const formRef = useRef<HTMLFormElement>(null);
    const [isOpen, setIsOpen] = useState(false);
-   let timeoutId:number;
+   let timeoutId: number;
 
-   function sendEmail(e:any){
+   function sendEmail(e: any) {
       e.preventDefault();
-      
-      emailjs.sendForm('service_t8tz5p8', 'template_t1yywrj', (formRef.current) ? formRef?.current : "", 'gJZ46YzwBsWV5tFji')
-      .then((result:any) => {
-            setIsOpen(true);
-            window.scrollTo(0, document.body.scrollHeight);
-        }, (error) => {});
+
+      emailjs
+         .sendForm(
+            "service_t8tz5p8",
+            "template_t1yywrj",
+            formRef.current ? formRef?.current : "",
+            "gJZ46YzwBsWV5tFji"
+         )
+         .then(
+            (_result: any) => {
+               setIsOpen(true);
+               window.scrollTo(0, document.body.scrollHeight);
+            },
+            (_error) => {}
+         );
 
       formRef.current?.reset();
-    };
+   }
 
-    useEffect(() => {
+   useEffect(() => {
       timeoutId = setTimeout(() => {
          setIsOpen(false);
       }, 7000);
       return () => clearTimeout(timeoutId);
-    }, [isOpen]);
+   }, [isOpen]);
 
-    const handleClick = () => {
+   const handleClick = () => {
       setIsOpen(!isOpen);
-    }
+   };
 
    return (
-      <section id="contact" className="flex-1 max-w-5xl md:flex md:flex-col mx-auto my-20 p-5 md:p-10 lg:p-0 dark:bg-dark">
+      <section id="contact" data-section className={`${sectionClasses}`}>
          <Title title="Contact" />
-         <form ref={formRef} onSubmit={sendEmail} className="">
+         <form ref={formRef} onSubmit={sendEmail} className="z-50">
+            <div className="mb-6">
+               <label
+                  htmlFor="name"
+                  className="block mb-2 text-sm font-medium dark:text-light-gray"
+               >
+                  Name
+               </label>
+               <input
+                  type="name"
+                  id="name"
+                  name="name"
+                  className="bg-gray-50 shadow text-dark text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
+                  required
+               />
+            </div>
             <div className="mb-6">
                <label
                   htmlFor="email"
@@ -49,7 +74,6 @@ function Contact() {
                   id="email"
                   name="email"
                   className="bg-gray-50 shadow text-dark text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
-                  placeholder="name@gmail.com"
                   required
                />
             </div>
@@ -69,7 +93,9 @@ function Contact() {
                ></textarea>
             </div>
             <div className="text-center my-10">
-               <Button type="primary" htmlType="submit">Send email</Button>
+               <Button type="primary" htmlType="submit">
+                  Send email
+               </Button>
             </div>
          </form>
          <ContactIcons center={true} />

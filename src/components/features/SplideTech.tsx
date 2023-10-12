@@ -24,7 +24,7 @@ const iconTextClasses =
 
 function SplideTech() {
    return (
-      <div>
+      <div className="z-10">
          <Splide
             options={{
                perPage: 3,
@@ -34,7 +34,6 @@ function SplideTech() {
                autoplay: true,
                interval: 5000,
                width: 800,
-               
             }}
          >
             <SplideSlide id="siangular" className="mx-auto">
@@ -92,7 +91,10 @@ function SplideTech() {
                <p className={iconTextClasses}>Typescript</p>
             </SplideSlide>
             <SplideSlide>
-               <a href="https://www.xataka.com/basics/que-html5-que-novedades-ofrece" target="_blank">
+               <a
+                  href="https://www.xataka.com/basics/que-html5-que-novedades-ofrece"
+                  target="_blank"
+               >
                   <SiHtml5
                      className={`${iconClasses}`}
                      style={{ color: "#FF4C1E" }}
