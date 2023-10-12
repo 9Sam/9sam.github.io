@@ -42,7 +42,7 @@ function Home() {
    return (
       <div className="text-dark bg-white dark:bg-dark dark:text-white">
          <header
-            className="flex h-screen max-h-screen w-screen relative p-5 md:p-20"
+            className="flex h-screen max-h-screen mb-20 w-screen relative p-5 md:p-20"
             data-section
             id="home"
          >
@@ -56,7 +56,7 @@ function Home() {
                />
             </div>
             <section
-               className="flex relative w-full justify-center"
+               className="flex relative my-auto w-full justify-center"
                data-section
                id="home"
             >
