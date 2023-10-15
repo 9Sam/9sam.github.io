@@ -7,6 +7,7 @@ import ProjectsMain from "../components/ProjectsMain";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Expirience from "../components/Expirience";
 
 function Home() {
    useEffect(() => {
@@ -91,6 +92,7 @@ function Home() {
                />
             </div>
          </header>
+         <Expirience />
          <Skills />
          <ProjectsMain />
          <About />

@@ -44,7 +44,11 @@ function Contact() {
    };
 
    return (
-      <section id="contact" data-section className={`${sectionClasses}`}>
+      <section
+         id="contact"
+         data-section
+         className={`${sectionClasses} lg:mb-48`}
+      >
          <Title title="Contact" />
          <form ref={formRef} onSubmit={sendEmail} className="z-50">
             <div className="mb-6">
@@ -58,7 +62,7 @@ function Contact() {
                   type="name"
                   id="name"
                   name="name"
-                  className="bg-gray-50 shadow text-dark text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
+                  className="bg-gray-50 shadow text-dark bg-secondary bg-opacity-5 text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
                   required
                />
             </div>
@@ -73,7 +77,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="bg-gray-50 shadow text-dark text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
+                  className="bg-gray-50 shadow text-dark bg-secondary bg-opacity-5  text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
                   required
                />
             </div>
@@ -88,7 +92,7 @@ function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="bg-gray-50 shadow text-gray-900 text-sm rounded-lg focus:ring-primary block w-full p-2.5 dark:bg-white dark:placeholder-white dark:text-dark"
+                  className="bg-gray-50 shadow text-gray-900 text-sm rounded-lg bg-secondary bg-opacity-5  focus:ring-primary block w-full p-2.5 dark:bg-white dark:placeholder-white dark:text-dark"
                   required
                ></textarea>
             </div>
