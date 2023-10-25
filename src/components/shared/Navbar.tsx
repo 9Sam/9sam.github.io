@@ -3,10 +3,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import darkLogo from "/icons/green.svg";
 import lightLogo from "/icons/darkBlueI.svg";
-import { MdLightMode, MdDarkMode, MdMenu } from "react-icons/md";
+import { MdLightMode, MdDarkMode, MdMenu, MdLanguage } from "react-icons/md";
 import { m } from "framer-motion";
+import LanguageButton from "../features/LanguageButton";
 
 function Navbar({ changeMode, darkMode }: any) {
+   const divRef = useRef<HTMLDivElement>();
    const [isOpen, setIsOpen] = useState(false);
    const [currentPathname, setCurrentPathname] = useState("");
    const location = useLocation();
@@ -64,6 +66,10 @@ function Navbar({ changeMode, darkMode }: any) {
 
    const links = [
       { name: "Home", redirect: currentPathname === "/" ? "#home" : "/#home" },
+      {
+         name: "Experience",
+         redirect: currentPathname === "/" ? "#experience" : "/#experience",
+      },
       {
          name: "Skills",
          redirect: currentPathname === "/" ? "#skills" : "/#skills",
@@ -154,6 +160,7 @@ function Navbar({ changeMode, darkMode }: any) {
                         <MdDarkMode className="w-6 h-6 hover:fill-primary" />
                      )}
                   </m.button>
+                  <LanguageButton />
                </ul>
             </m.div>
          </div>
