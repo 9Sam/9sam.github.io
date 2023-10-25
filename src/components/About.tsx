@@ -2,30 +2,49 @@ import code from "/coding_1280.jpg";
 import Title from "./shared/Title";
 import { MessagesE } from "../utils/messages";
 import { sectionClasses } from "../utils/themeClasses";
+import ShowCardMain from "./features/ShowCardMain";
+import { BiTestTube } from "react-icons/bi/index";
+import { HiDatabase } from "react-icons/hi/index";
+import { HiComputerDesktop } from "react-icons/hi2/index";
+
+const iconsClasses = "w-12 h-12 my-auto fill-secondary";
+
+const showCards = [
+   {
+      id: 1,
+      icon: <HiComputerDesktop className={iconsClasses} />,
+      imageAlt: "Experience icon",
+      text: "1.6 years working as a profesional fullstack web developer.",
+   },
+   {
+      id: 2,
+      icon: <BiTestTube className={iconsClasses} />,
+      imageAlt: "Expirience icon",
+      text: "Expirience working with unit testing and integration testing.",
+   },
+   {
+      id: 3,
+      icon: <HiDatabase className={iconsClasses} />,
+      imageAlt: "Expirience icon",
+      text: "Relational and non relational databases experience.",
+   },
+];
 
 function About() {
    return (
-      <section id="about" data-section className={`${sectionClasses} h-screen`}>
+      <section id="about" data-section className={`${sectionClasses}`}>
          <Title title="About me" />
          <div className="flex flex-col md:flex-row gap-5 my-10">
-            <div className="w-full md:1/2 lg:w-1/3 h-28 rounded shadow bg-dark bg-opacity-5 dark:bg-white dark:bg-opacity-5 p-3">
-               {/* <h4 className="text-center">Expirience</h4> */}
-               <div className="flex h-full">
-                  <img className="w-1/3" src="" alt="" />
-                  <div className="w-2/3 my-auto text-dark text-opacity-70 dark:text-white dark:text-opacity-90">
-                     1.5 years of experience as profesional fullstack web
-                     developer.
-                  </div>
-               </div>
-            </div>
-            <div className="w-full md:1/2 lg:w-1/3 h-28 rounded shadow bg-dark bg-opacity-5 dark:bg-white dark:bg-opacity-5 p-3">
-               <img src="" alt="" />
-               <p></p>
-            </div>
-            <div className="w-full md:1/2 lg:w-1/3 h-28 rounded shadow bg-dark bg-opacity-5 dark:bg-white dark:bg-opacity-5 p-3">
-               <img src="" alt="" />
-               <p></p>
-            </div>
+            {showCards.map((card, _index) => {
+               return (
+                  <ShowCardMain
+                     key={card.id}
+                     text={card.text}
+                     icon={card.icon}
+                     alt={card.imageAlt}
+                  />
+               );
+            })}
          </div>
          <div className="text-dark text-opacity-70 text-center rounded-md shadow bg-dark bg-opacity-5 dark:bg-white dark:bg-opacity-5 h-auto z-10">
             <div className="flex flex-col md:flex-row">
