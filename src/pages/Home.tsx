@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import HomeSection from "../components/HomeSection";
-import Expirience from "../components/Expirience";
+import Expirience from "../components/Experience";
 
 function Home() {
    useEffect(() => {
