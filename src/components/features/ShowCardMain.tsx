@@ -4,7 +4,7 @@ type Props = {
    alt: string;
 };
 
-const ShowCardMain = ({ text, icon }: Props) => {
+function ShowCardMain({ text, icon }: Props) {
    return (
       <div className="w-full md:1/2 lg:w-1/3 h-28 rounded shadow bg-dark bg-opacity-5 dark:bg-white dark:bg-opacity-5 p-3">
          <div className="flex h-full">

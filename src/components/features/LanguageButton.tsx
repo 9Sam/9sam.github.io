@@ -2,7 +2,7 @@ import { m } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { MdLanguage } from "react-icons/md";
 
-const LanguageButton = () => {
+function LanguageButton(){
    const buttonRef = useRef<HTMLButtonElement | null>(null);
    const ulRef = useRef<HTMLUListElement>(null);
    const [isOpen, setIsOpen] = useState(false);

@@ -1,11 +1,11 @@
-import React, {FC, ReactNode} from 'react';
+import {ReactNode} from 'react';
 
 interface Props {
    children: ReactNode;
    tooltip?: string;
 }
 
-const Tooltip: FC<Props> = ({children, tooltip}): JSX.Element => {
+function Tooltip({children, tooltip}: Props): JSX.Element {
   return (
     <div className='group relative inline-block'>
       {children}

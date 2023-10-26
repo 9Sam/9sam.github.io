@@ -8,7 +8,7 @@ type Props = {
 const h2Classes =
   "text-dark dark:text-light-gray text-xl md:text-2xl font-bold py-5 md:h-20";
 
-const SkillsList = ({ items }: Props) => {
+function SkillsList({ items }: Props){
   return (
     <div className="w-full md:w-1/3 p-2 text-center">
       <h2 className={h2Classes}>{items.title}</h2>

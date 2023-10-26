@@ -1,7 +1,7 @@
 import { sectionClasses } from "../utils/themeClasses";
 import Title from "./shared/Title";
 
-const Experience = () => {
+function Experience() {
    return (
       <section
          id="experience"

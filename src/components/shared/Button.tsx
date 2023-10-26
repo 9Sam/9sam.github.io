@@ -1,5 +1,3 @@
-import React from 'react';
-
 type buttonT = "primary" | "secondary" | "success" | "warning" | "danger";
 type htmlTypeT = "button" | "submit" | "reset" | undefined;
 

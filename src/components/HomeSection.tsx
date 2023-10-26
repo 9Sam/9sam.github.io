@@ -1,7 +1,7 @@
 import code from "/icons/code-svgrepo-com 1.svg";
 import ContactIcons from "./features/ContactIcons";
 
-const HomeSection = () => {
+function HomeSection(){
    return (
       <header
          className="flex h-screen max-h-screen mb-20 w-screen relative p-5 md:p-20"
