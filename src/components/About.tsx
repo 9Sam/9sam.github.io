@@ -1,4 +1,3 @@
-import code from "/coding_1280.jpg";
 import Title from "./shared/Title";
 import { MessagesE } from "../utils/messages";
 import { sectionClasses } from "../utils/themeClasses";
@@ -6,6 +5,7 @@ import ShowCardMain from "./features/ShowCardMain";
 import { BiTestTube } from "react-icons/bi/index";
 import { HiDatabase } from "react-icons/hi/index";
 import { HiComputerDesktop } from "react-icons/hi2/index";
+import code from "/coding_1280.jpg";
 
 const iconsClasses = "w-12 h-12 my-auto fill-tertiary animate-pulse";
 
@@ -14,7 +14,7 @@ const showCards = [
       id: 1,
       icon: <HiComputerDesktop className={`${iconsClasses}`} />,
       imageAlt: "Experience icon",
-      text: "1.6 years working as a profesional fullstack web developer.",
+      text: "1.6 years working as a profesional full-stack web developer.",
    },
    {
       id: 2,
@@ -26,13 +26,13 @@ const showCards = [
       id: 3,
       icon: <HiDatabase className={iconsClasses} />,
       imageAlt: "Expirience icon",
-      text: "Relational and non relational databases experience.",
+      text: "Experience working with relational and non relational databases.",
    },
 ];
 
 function About() {
    return (
-      <section id="about" data-section className={`${sectionClasses}`}>
+      <section id="about" data-section className={sectionClasses}>
          <Title title="About me" />
          <div className="flex flex-col md:flex-row gap-5 my-10">
             {showCards.map((card, _index) => {

@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import HomeSection from "../components/HomeSection";
-import Expirience from "../components/Experience";
+import Experience from "../components/Experience";
 
 function Home() {
    useEffect(() => {
@@ -42,7 +42,7 @@ function Home() {
    return (
       <div className="text-dark bg-white dark:bg-dark dark:text-white">
          <HomeSection />
-         <Expirience />
+         <Experience />
          <Skills />
          <div className="w-full bg-white">
             <ProjectsMain />
