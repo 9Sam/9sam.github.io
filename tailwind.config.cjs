@@ -14,6 +14,7 @@ module.exports = {
          'white': '#ffffff',
          'primary': '#20FFA2',
          'secondary': '#25B6D2',
+         'tertiary': '#25B6D2',
          'success': '#A1FF72',
          'warning': '#FFF25B',
          'danger': '#FF5B5B'
