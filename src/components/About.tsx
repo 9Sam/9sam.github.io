@@ -7,12 +7,12 @@ import { BiTestTube } from "react-icons/bi/index";
 import { HiDatabase } from "react-icons/hi/index";
 import { HiComputerDesktop } from "react-icons/hi2/index";
 
-const iconsClasses = "w-12 h-12 my-auto fill-secondary";
+const iconsClasses = "w-12 h-12 my-auto fill-tertiary animate-pulse";
 
 const showCards = [
    {
       id: 1,
-      icon: <HiComputerDesktop className={iconsClasses} />,
+      icon: <HiComputerDesktop className={`${iconsClasses}`} />,
       imageAlt: "Experience icon",
       text: "1.6 years working as a profesional fullstack web developer.",
    },
