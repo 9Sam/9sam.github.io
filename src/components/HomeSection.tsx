@@ -1,6 +1,9 @@
 import code from "/icons/code-svgrepo-com 1.svg";
 import ContactIcons from "./features/ContactIcons";
 
+const img = new Image();
+img.src = "/icons/code-svgrepo-com 1.svg";
+
 function HomeSection(){
    return (
       <header
