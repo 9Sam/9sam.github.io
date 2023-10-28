@@ -6,8 +6,11 @@ import lightLogo from "/icons/darkBlueI.svg";
 import { MdLightMode, MdDarkMode, MdMenu, MdLanguage } from "react-icons/md";
 import { m } from "framer-motion";
 import LanguageButton from "../features/LanguageButton";
+import { useDarkMode } from "../../context/DarkModeContext";
+import DarkModeButton from "./buttons/DarkModeButton";
 
-function Navbar({ changeMode, darkMode }: any) {
+function Navbar() {
+   const { isDarkMode, setDarkMode } = useDarkMode();
    const divRef = useRef<HTMLDivElement>();
    const [isOpen, setIsOpen] = useState(false);
    const [currentPathname, setCurrentPathname] = useState("");
@@ -29,6 +32,7 @@ function Navbar({ changeMode, darkMode }: any) {
          if (visibleSection) {
             setActiveSection(visibleSection.id as any);
          }
+
       }) as any;
       //Get custom attribute data-section from all sections
       const sections = document.querySelectorAll("[data-section]");
@@ -38,6 +42,7 @@ function Navbar({ changeMode, darkMode }: any) {
             (observer.current as IntersectionObserver).observe(section);
          }
       });
+
 
       //Cleanup function to remove observer
       return () => {
@@ -90,11 +95,12 @@ function Navbar({ changeMode, darkMode }: any) {
 
    return (
       <nav className="bg-white shadow fixed top-0 left-0 w-full z-20 px-2 sm:px-4 py-2.5 dark:bg-dark scrollbar-hide">
+         
          <div className="container flex flex-wrap justify-between items-center mx-auto">
             <NavLink to="/" className="flex dark:text-light-gray">
                <img
                   className="h-10 w-7 mr-3"
-                  src={darkMode ? darkLogo : lightLogo}
+                  src={isDarkMode ? darkLogo : lightLogo}
                   alt="icon"
                />
                <span className="self-center text-md font-semibold whitespace-nowrap dark:text-light-gray">
@@ -105,7 +111,7 @@ function Navbar({ changeMode, darkMode }: any) {
                onClick={() => setIsOpen(!isOpen)}
                data-collapse-toggle="mobile-menu"
                type="button"
-               className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary dark:fill-white dark:text-white dark:focus:ring-primary"
+               className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary dark:fill-white dark:text-white dark:focus:ring-d-primary"
                aria-controls="mobile-menu-2"
                aria-expanded="false"
             >
@@ -149,17 +155,7 @@ function Navbar({ changeMode, darkMode }: any) {
                         </li>
                      );
                   })}
-                  <m.button
-                     whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
-                     onClick={() => changeMode()}
-                     className="block mx-100 md:mx-0 py-2 md:py-0 pr-4 pl-3 m-auto md:m-0 cursor-pointer"
-                  >
-                     {darkMode ? (
-                        <MdLightMode className="w-6 h-6 hover:fill-primary" />
-                     ) : (
-                        <MdDarkMode className="w-6 h-6 hover:fill-primary" />
-                     )}
-                  </m.button>
+                  <DarkModeButton />
                   <LanguageButton />
                </ul>
             </m.div>

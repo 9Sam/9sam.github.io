@@ -17,10 +17,10 @@ function Home() {
       const leftTriangle = document.getElementById("left-triangle");
       const rightTriangle = document.getElementById("right-triangle");
 
-      var lastScrollTop = 0;
+      let lastScrollTop = 0;
 
       const handleScroll = () => {
-         var st = window.scrollY || document.documentElement.scrollTop;
+         let st = window.scrollY || document.documentElement.scrollTop;
          if (st > lastScrollTop) {
             leftTriangle?.classList.remove("animate__delay-1s");
             rightTriangle?.classList.remove("animate__delay-1s");
@@ -40,13 +40,11 @@ function Home() {
    }, []);
 
    return (
-      <div className="text-dark bg-white dark:bg-dark dark:text-white">
+      <div className="">
          <HomeSection />
          <Experience />
          <Skills />
-         <div className="w-full bg-white">
-            <ProjectsMain />
-         </div>
+         <ProjectsMain />
          <About />
          <Contact />
       </div>
