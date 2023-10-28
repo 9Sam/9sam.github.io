@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Nunito", sans-serif;
+   /* border: 1px solid red !important; */
+}
+
+.splide__arrow > svg {
+    fill: #20ffa2 !important;
+}
+
+.splide__pagination__page {
+    background: #474747 !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #20ffa2 !important;
+}
+
+html,
+body,
+main {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+}
+
+#root {
+    overflow: hidden;
+    position: relative;
+    @apply text-dark bg-white dark:bg-dark dark:text-white
+}
+
+nav {
+   transition: opacity 600ms, visibility 600ms;
+}
+
+html {
+   scroll-behavior: smooth !important;
+}
