@@ -5,14 +5,13 @@ import Blog from "./pages/Blog";
 import Navbar from "./components/shared/Navbar";
 import Footer from "./components/shared/Footer";
 import { LazyMotion, domAnimation } from "framer-motion";
-
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
-import Particles from "react-particles";
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
-import { getTsConfig } from "./utils/tsParticlesConfiguration";
+import Particles from "react-particles";
 import { useDarkMode } from "./context/DarkModeContext";
+import { getTsConfig } from "./utils/tsParticlesConfiguration";
+
 
 function App() {
    const particlesInit = useCallback(async (engine: Engine) => {
@@ -27,8 +26,8 @@ function App() {
    const { isDarkMode } = useDarkMode();
 
    return (
-      // <div className="wrapper">
       <LazyMotion features={domAnimation}>
+      <>
          <Particles
             id="tsparticles"
             init={particlesInit}
@@ -47,6 +46,7 @@ function App() {
                <Footer />
             </main>
          </BrowserRouter>
+      </>
       </LazyMotion>
    );
 }
