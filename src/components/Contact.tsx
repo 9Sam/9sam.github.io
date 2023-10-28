@@ -1,5 +1,5 @@
 import Title from "./shared/Title";
-import Button from "./shared/Button";
+import Button from "./shared/buttons/Button";
 import { useEffect, useRef, useState } from "react";
 import ContactIcons from "./features/ContactIcons";
 import Alert from "./features/Alert";

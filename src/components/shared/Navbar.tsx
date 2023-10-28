@@ -3,9 +3,9 @@ import { NavLink, useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import darkLogo from "/icons/green.svg";
 import lightLogo from "/icons/darkBlueI.svg";
-import { MdLightMode, MdDarkMode, MdMenu, MdLanguage } from "react-icons/md";
+import { MdMenu } from "react-icons/md";
 import { m } from "framer-motion";
-import LanguageButton from "../features/LanguageButton";
+import LanguageButton from "./buttons/LanguageButton";
 import { useDarkMode } from "../../context/DarkModeContext";
 import DarkModeButton from "./buttons/DarkModeButton";
 

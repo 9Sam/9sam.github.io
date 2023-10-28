@@ -9,7 +9,7 @@ import { IoChevronBack } from "react-icons/io5";
 import { AiFillCode, AiFillCheckCircle } from "react-icons/ai";
 import { VscPreview } from "react-icons/vsc";
 import Title from "./shared/Title";
-import Button from "./shared/Button";
+import Button from "./shared/buttons/Button";
 import Tag from "./shared/Tag";
 import FsLightbox from "fslightbox-react";
 const LightBox = (FsLightbox as any).default
