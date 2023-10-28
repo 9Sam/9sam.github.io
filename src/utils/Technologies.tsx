@@ -39,6 +39,14 @@ export const frontendItems: TechnologyI[] = [
       ),
    },
    {
+      name: "Typescript",
+      link: "https://www.typescriptlang.org/",
+      skill: true,
+      component: (
+         <SiTypescript className={iconClasses} style={{ fill: "#3178C6" }} />
+      ),
+   },
+   {
       name: "React",
       link: "https://es.reactjs.org/",
       skill: true,
@@ -115,14 +123,6 @@ export const backendItems: TechnologyI[] = [
       skill: true,
       component: (
          <SiExpress className={iconClasses} style={{ fill: "#FF4C1E" }} />
-      ),
-   },
-   {
-      name: "Typescript",
-      link: "https://www.typescriptlang.org/",
-      skill: true,
-      component: (
-         <SiTypescript className={iconClasses} style={{ fill: "#3178C6" }} />
       ),
    },
    {
