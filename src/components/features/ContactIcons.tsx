@@ -4,7 +4,7 @@ type contactT = {
    isCenter?: boolean;
 };
 
-const iconClasses = `w-9 h-9 md:w-10 md:h-10 hover:text-l-primary dark:hover:text-d-primary transition ease-out duration-500 z-10`;
+const iconClasses = `w-7 h-7 md:w-12 md:h-12 hover:text-l-primary dark:hover:text-d-primary transition ease-out duration-500 z-10`;
 
 const contactIcons = [
    {

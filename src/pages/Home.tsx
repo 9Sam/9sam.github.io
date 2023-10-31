@@ -4,7 +4,7 @@ import About from "../components/sections/About";
 import Skills from "../components/sections/Skills";
 import Contact from "../components/sections/Contact";
 import ProjectsMain from "../components/sections/ProjectsMain";
-import HomeSection from "../components/sections/HomeSection";
+import HomeSection from "../components/sections/homeSection/HomeSection";
 import Experience from "../components/sections/Experience";
 import "aos/dist/aos.css";
 import tailwindConfig from "tailwind-config";
