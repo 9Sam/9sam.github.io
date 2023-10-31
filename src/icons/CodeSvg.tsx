@@ -1,0 +1,37 @@
+type Props = {
+   theme: string;
+};
+
+function CodeSvg() {
+   return (
+      <svg
+         width={252}
+         height={252}
+         viewBox="0 0 252 252"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg"
+      >
+         <g clipPath="url(#clip0_7_7)">
+            <path
+               d="M0 128.416L85.9596 88.4815V107.464L20.9514 135.936V136.295L85.9596 164.767V183.749L0 143.823V128.416Z"
+               fill="#25B6D2"
+            />
+            <path
+               d="M99.225 190.92L137.549 61.0805H155.638L117.337 190.92H99.225Z"
+               fill="#415E72"
+            />
+            <path
+               d="M252 144.351L166.04 183.753V164.771L232.482 136.299V135.94L166.04 107.464V88.4815L252 127.884V144.351Z"
+               fill="#1B37D5"
+            />
+         </g>
+         <defs>
+            <clipPath id="clip0_7_7">
+               <rect width={252} height={252} fill="white" />
+            </clipPath>
+         </defs>
+      </svg>
+   );
+}
+
+export default CodeSvg;
