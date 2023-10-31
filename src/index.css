@@ -10,29 +10,31 @@
    /* border: 1px solid red !important; */
 }
 
-.splide__arrow > svg {
-    fill: #20ffa2 !important;
-}
-
-.splide__pagination__page {
-    background: #474747 !important;
-}
-
-.splide__pagination__page.is-active {
-    background: #20ffa2 !important;
+@layer base {
+   :root {
+      --color-dark: #050519;
+      --color-light-gray: #e3e2e2;
+      --color-white: #ffffff;
+      --color-primary-dark: #20ffa2;
+      --color-secondary-dark: #25b6d2;
+      --color-primary-light: #1b37d5;
+      --color-secondary-light: #25b6d2;
+      --color-warning: #fff25b;
+      --color-danger: #ff5b5b;
+   }
 }
 
 html,
 body,
 main {
-    overflow-x: hidden;
-    overflow-y: auto !important;
+   overflow-x: hidden;
+   overflow-y: auto !important;
 }
 
 #root {
-    overflow: hidden;
-    position: relative;
-    @apply text-dark bg-white dark:bg-dark dark:text-white
+   overflow: hidden;
+   position: relative;
+   @apply text-dark bg-white dark:bg-dark dark:text-white;
 }
 
 nav {
@@ -41,4 +43,103 @@ nav {
 
 html {
    scroll-behavior: smooth !important;
+}
+
+/* TODO: Change the colors of the light mode splide */
+.splide__pagination__page {
+   background: #bebebe !important;
+}
+
+.splide_light .splide__arrow > svg {
+   fill: var(--color-primary-light) !important;
+}
+
+.splide_dark .splide__arrow > svg {
+   fill: var(--color-primary-dark) !important;
+}
+
+.splide_light .splide__arrow > svg {
+   fill: var(--color-primary-light) !important;
+}
+
+.splide_dark .splide__arrow > svg {
+   fill: var(--color-primary-dark) !important;
+}
+
+.splide_light .splide__pagination__page.is-active {
+   background: var(--color-primary-light) !important;
+}
+
+.splide_dark .splide__pagination__page.is-active {
+   background: var(--color-primary-dark) !important;
+}
+
+/** CODE SVG STYLES */
+.code__icon g path:first-child {
+   fill: var(--color-secondary-light);
+}
+
+.code__icon g path:last-child {
+   fill: var(--color-primary-light);
+}
+
+.dark .code__icon g path:first-child {
+   fill: var(--color-secondary-dark);
+}
+
+.dark .code__icon g path:last-child {
+   fill: var(--color-primary-dark);
+}
+
+/** TRIANGLES SVG STYLES */
+.triangle {
+   fill: var(--color-primary-light);
+}
+
+.dark .triangle {
+   fill: var(--color-primary-dark);
+}
+
+.computer-icon polygon[style="fill: rgb(146, 227, 169)"] {
+   fill: #1b37d5 !important;
+}
+
+polygon[style*="fill:#92E3A9"] {
+   fill: #1b37d5 !important;
+}
+
+/** COMPUTER SVG STYLES */
+
+#Background_Simple > g > path:nth-child(2) {
+   fill: var(--color-light-gray) !important;
+   opacity: 1 !important;
+}
+
+.dark #Background_Simple {
+   background-color: var(--color-primary-dark) !important;
+}
+
+.dark #Background_Simple > g > path:nth-child(2) {
+   fill: var(--color-light-gray) !important;
+   opacity: 0.1 !important;
+}
+
+#Device > g > g:nth-child(1) > g:nth-child(4) > polygon {
+   fill: var(--color-secondary-light) !important;
+   opacity: 0.8;
+}
+
+#Mouse > g > g:nth-child(2) > path:nth-child(1) {
+   fill: var(--color-secondary-light) !important;
+   opacity: 0.8;
+}
+
+.dark #Device > g > g:nth-child(1) > g:nth-child(4) > polygon {
+   fill: var(--color-primary-dark) !important;
+   opacity: 0.8;
+}
+
+.dark #Mouse > g > g:nth-child(2) > path:nth-child(1) {
+   fill: var(--color-primary-dark) !important;
+   opacity: 0.8;
 }
