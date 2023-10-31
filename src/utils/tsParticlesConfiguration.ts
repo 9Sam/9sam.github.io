@@ -2,7 +2,7 @@ export const getTsConfig = (darkMode: boolean): any => {
    return {
       background: {
          color: {
-            value: darkMode ? "#030312" : "#ffffff",
+            value: darkMode ? "#050519" : "#ffffff",
          },
       },
       fpsLimit: 120,

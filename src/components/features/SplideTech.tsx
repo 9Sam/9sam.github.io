@@ -12,12 +12,15 @@ import {
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 const iconClasses = "w-12 md:w-20 h-12 md:h-20 mx-auto align-middle";
 const iconTextClasses =
    "dark:text-white text-sm md:text-base text-center pt-2 opacity-40";
 
 function SplideTech() {
+   const { isDarkMode } = useDarkMode();
+
    const slideOptions: any = {
       perPage: 3,
       type: "loop",
@@ -105,10 +108,11 @@ function SplideTech() {
    ];
 
    return (
-      <div className="z-10">
+      <div className={`${isDarkMode ? "splide_dark" : "splide_light"} "z-10"`}>
+         {/* TODO: Add a dinamic variable to the class */}
          <Splide options={slideOptions}>
             {slides.map((slide, index) => (
-               <SplideSlide key={index} id={slide.id} className="mx-auto">
+               <SplideSlide key={index} id={slide.id}>
                   <a href={slide.href} target="_blank">
                      {slide.icon}
                   </a>

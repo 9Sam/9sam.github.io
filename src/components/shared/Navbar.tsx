@@ -32,7 +32,6 @@ function Navbar() {
          if (visibleSection) {
             setActiveSection(visibleSection.id as any);
          }
-
       }) as any;
       //Get custom attribute data-section from all sections
       const sections = document.querySelectorAll("[data-section]");
@@ -42,7 +41,6 @@ function Navbar() {
             (observer.current as IntersectionObserver).observe(section);
          }
       });
-
 
       //Cleanup function to remove observer
       return () => {
@@ -94,8 +92,7 @@ function Navbar() {
    ];
 
    return (
-      <nav className="bg-white shadow fixed top-0 left-0 w-full z-20 px-2 sm:px-4 py-2.5 dark:bg-dark scrollbar-hide">
-         
+      <nav className="shadow fixed top-0 left-0 w-full z-20 px-2 sm:px-4 py-2.5 bg-white dark:bg-dark scrollbar-hide">
          <div className="container flex flex-wrap justify-between items-center mx-auto">
             <NavLink to="/" className="flex dark:text-light-gray">
                <img
@@ -141,10 +138,10 @@ function Navbar() {
                                     ? scrollWithOffset(el, true)
                                     : scrollWithOffset(el, false)
                               }
-                              className={`block py-2 pr-4 pl-3 bg-white dark:bg-dark ${
+                              className={`block py-2 pr-4 pl-3 bg-white dark:bg-dark font-medium ${
                                  link.redirect === "/#" + activeSection ||
                                  link.redirect === "#" + activeSection
-                                    ? "text-primary"
+                                    ? "text-l-primary dark:text-d-primary font-bold"
                                     : "text-dark dark:text-white"
                               }`}
                               onClick={() => handleOpen()}

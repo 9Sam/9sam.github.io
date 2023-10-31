@@ -25,7 +25,7 @@ function SkillsList({ items }: Props) {
                      <div className="flex w-1/2">
                         <a
                            href={item.link}
-                           className="hover:text-primary transition ease-out duration-200"
+                           className="hover:text-l-primary dark:hover:text-d-primary transition ease-out duration-200"
                            target="_blank"
                            rel="noopener noreferrer"
                         >

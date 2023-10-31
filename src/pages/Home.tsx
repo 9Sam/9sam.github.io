@@ -1,16 +1,18 @@
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Contact from "../components/Contact";
-import ProjectsMain from "../components/ProjectsMain";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
-import HomeSection from "../components/HomeSection";
-import Experience from "../components/Experience";
+import AOS from "aos";
+import About from "../components/sections/About";
+import Skills from "../components/sections/Skills";
+import Contact from "../components/sections/Contact";
+import ProjectsMain from "../components/sections/ProjectsMain";
+import HomeSection from "../components/sections/HomeSection";
+import Experience from "../components/sections/Experience";
+import "aos/dist/aos.css";
+import tailwindConfig from "tailwind-config";
 
 function Home() {
    useEffect(() => {
       AOS.init({ once: false, duration: 1200 });
+      console.log(tailwindConfig);
    }, []);
 
    useEffect(() => {
