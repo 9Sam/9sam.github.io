@@ -9,14 +9,17 @@ type Props = [
 
 function useClickOutside([ref, buttonRef, isOpen, setIsOpen]: Props) {
    const handleClickOutside = (event: any) => {
-      if (
-         ref.current &&
-         !ref.current.contains(event.target) &&
-         buttonRef.current &&
-         !buttonRef.current.contains(event.target as Node)
-      ) {
-         setIsOpen(false);
-      }
+      try {
+         if (
+            ref.current &&
+            !ref.current.contains(event.target) &&
+            buttonRef.current &&
+            !buttonRef.current.contains(event.target as Node)
+         ) {
+            setIsOpen(false);
+         }
+         
+      } catch (error) {}
    };
 
    useEffect(() => {
