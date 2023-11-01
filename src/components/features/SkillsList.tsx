@@ -10,9 +10,9 @@ const h2Classes =
 
 function SkillsList({ items }: Props) {
    return (
-      <div className="w-full md:w-1/3 p-2 text-center">
+      <div className="w-full md:w-[320px] p-2 text-center shadow rounded blur-effect">
          <h2 className={h2Classes}>{items.title}</h2>
-         <div className="text-dark dark:text-light-gray text-lg md:text-xl">
+         <div className="text-dark dark:text-light-gray text-lg md:text-xl pb-10">
             {items.technologies
                .filter((x) => x.skill === true)
                .map((item, index) => (

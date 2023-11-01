@@ -108,8 +108,7 @@ function SplideTech() {
    ];
 
    return (
-      <div className={`${isDarkMode ? "splide_dark" : "splide_light"} "z-10"`}>
-         {/* TODO: Add a dinamic variable to the class */}
+      <div className={`${isDarkMode ? "splide_dark" : "splide_light"}`}>
          <Splide options={slideOptions}>
             {slides.map((slide, index) => (
                <SplideSlide key={index} id={slide.id}>

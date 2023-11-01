@@ -7,12 +7,10 @@ import ProjectsMain from "../components/sections/ProjectsMain";
 import HomeSection from "../components/sections/homeSection/HomeSection";
 import Experience from "../components/sections/Experience";
 import "aos/dist/aos.css";
-import tailwindConfig from "tailwind-config";
 
 function Home() {
    useEffect(() => {
       AOS.init({ once: false, duration: 1200 });
-      console.log(tailwindConfig);
    }, []);
 
    useEffect(() => {

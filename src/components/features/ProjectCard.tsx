@@ -23,10 +23,10 @@ function ProjectCard({ project }: projectT) {
 
    if (project) {
       return (
-         <div className="w-[350px] bg-white rounded-lg h-auto shadow-md dark:bg-dark dark:border dark:border-d-primary dark:border-opacity-50 z-10">
+         <div className="w-[350px] bg-white rounded-md h-auto shadow-md dark:bg-dark dark:border dark:border-d-primary dark:border-opacity-50 z-10">
             <div className="cursor-pointer" onClick={() => setState(true)}>
                <img
-                  className="rounded-t-lg h-40 object-cover w-full"
+                  className="rounded-t-md h-40 object-cover w-full"
                   // src={getImageByKey((project.front) ? project.front : "")}
                   src={project.front}
                   alt=""
