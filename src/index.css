@@ -46,6 +46,30 @@ html {
 }
 
 /* TODO: Change the colors of the light mode splide */
+@media screen and (max-width: 640px) {
+   .splide {
+      padding-top: 0 !important;
+      margin-bottom: 40px !important;
+      max-width: 350px !important;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .splide {
+      padding-top: 0 !important;
+      margin-bottom: 40px !important;
+      max-width: 600px !important;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .splide {
+      padding-top: 0 !important;
+      margin-bottom: 40px !important;
+      max-width: 700px !important;
+   }
+}
+
 .splide__pagination__page {
    background: #bebebe !important;
 }
@@ -142,4 +166,8 @@ polygon[style*="fill:#92E3A9"] {
 .dark #Mouse > g > g:nth-child(2) > path:nth-child(1) {
    fill: var(--color-primary-dark) !important;
    opacity: 0.8;
+}
+
+.blur-effect {
+   @apply bg-slate-700 bg-opacity-5 backdrop-blur-sm dark:bg-stone-50 dark:bg-opacity-5;
 }
