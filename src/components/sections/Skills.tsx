@@ -17,11 +17,7 @@ const items: ItemsT[] = [
 
 function Skills() {
    return (
-      <section
-         id="skills"
-         data-section
-         className={`${sectionClasses} flex flex-col`}
-      >
+      <section id="skills" data-section className={`${sectionClasses}`}>
          <Title title="Skills" />
          <div className="flex justify-center">
             <SplideTech />

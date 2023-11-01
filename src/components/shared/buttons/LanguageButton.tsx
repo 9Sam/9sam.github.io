@@ -25,13 +25,13 @@ function LanguageButton() {
    useClickOutside([ulRef, buttonRef, isOpen, setIsOpen]);
 
    return (
-      <>
+      <div className="absoulte md:relative flex flex-col justify-center">
          <m.button
             whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
             transition={{ duration: 0.5 }}
             ref={buttonRef}
             onClick={() => setIsOpen(!isOpen)}
-            className="relative mx-100 md:mx-0 py-2 md:py-0 pr-4 pl-3 m-auto md:m-0 cursor-pointer"
+            className="mx-auto md:mx-0 py-2 md:py-0 pr-4 pl-3 cursor-pointer"
          >
             <MdLanguage className="w-6 h-6 hover:fill-l-primary dark:hover:fill-d-primary" />
          </m.button>
@@ -39,7 +39,7 @@ function LanguageButton() {
          <m.ul
             animate={{ opacity: isOpen ? 1 : 0 }}
             ref={ulRef}
-            className={`relative md:absolute md:top-14 md:right-5 flex flex-col md:shadow-md w-auto rounded bg-white dark:bg-dark transition-all duration-300 ${
+            className={`relative md:absolute mx-auto md:top-10 md:right-0 flex flex-col md:shadow-md w-full md:w-32 rounded bg-white dark:bg-dark transition-all duration-300 ${
                !isOpen ? "hidden" : ""
             }`}
          >
@@ -53,7 +53,7 @@ function LanguageButton() {
                </li>
             ))}
          </m.ul>
-      </>
+      </div>
    );
 }
 
