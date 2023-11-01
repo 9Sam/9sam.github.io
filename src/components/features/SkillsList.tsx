@@ -10,14 +10,14 @@ const h2Classes =
 
 function SkillsList({ items }: Props) {
    return (
-      <div className="w-full md:w-[320px] p-2 text-center shadow rounded blur-effect">
+      <div className="blur-effect w-full rounded p-2 text-center shadow md:w-[320px]">
          <h2 className={h2Classes}>{items.title}</h2>
-         <div className="text-dark dark:text-light-gray text-lg md:text-xl pb-10">
+         <div className="pb-10 text-lg text-dark dark:text-light-gray md:text-xl">
             {items.technologies
                .filter((x) => x.skill === true)
                .map((item, index) => (
-                  <div key={index} className="flex mt-3">
-                     <div className="my-auto w-1/2 -ml-6 pr-2">
+                  <div key={index} className="mt-3 flex">
+                     <div className="my-auto -ml-6 w-1/2 pr-2">
                         {React.cloneElement(item.component, {
                            className: "w-6 h-6 mx-auto float-right",
                         })}
@@ -25,7 +25,7 @@ function SkillsList({ items }: Props) {
                      <div className="flex w-1/2">
                         <a
                            href={item.link}
-                           className="hover:text-l-primary dark:hover:text-d-primary transition ease-out duration-200"
+                           className="transition duration-200 ease-out hover:text-l-primary dark:hover:text-d-primary"
                            target="_blank"
                            rel="noopener noreferrer"
                         >

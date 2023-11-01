@@ -9,7 +9,7 @@ function Experience() {
          className={`${sectionClasses} lg:mb-48`}
       >
          <Title title="Experience" />
-         <div className="w-96 h-96"></div>
+         <div className="h-96 w-96"></div>
       </section>
    );
 }

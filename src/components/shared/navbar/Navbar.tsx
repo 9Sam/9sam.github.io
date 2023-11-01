@@ -19,10 +19,10 @@ function Navbar() {
    return (
       <MenuContextProvider>
          <nav
-            className="shadow fixed top-0 left-0 w-full z-20 px-2 sm:px-4 py-2.5 bg-white dark:bg-dark scrollbar-hide"
+            className="scrollbar-hide fixed top-0 left-0 z-20 w-full bg-white px-2 py-2.5 shadow dark:bg-dark sm:px-4"
             ref={navRef}
          >
-            <div className="container flex flex-wrap justify-between items-center mx-auto">
+            <div className="container mx-auto flex flex-wrap items-center justify-between">
                <Logo isDarkMode={isDarkMode} />
                <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
                <MenuItems isOpen={isOpen} setIsOpen={setIsOpen} />

@@ -30,13 +30,13 @@ function Button({
    return (
       <button
          type={htmlType}
-         className={`rounded shadow opacity-80 border-[1px] border-l-primary dark:border-d-primary hover:opacity-100 text-dark dark:text-dark py-1.5 px-2 transition ease-out duration-300 ${
+         className={`rounded border-[1px] border-l-primary py-1.5 px-2 text-dark opacity-80 shadow transition duration-300 ease-out hover:opacity-100 dark:border-d-primary dark:text-dark ${
             type ? buttonClasses[type] : ""
-         } ${disabled ? "opacity-60 hover:opacity-60 cursor-not-allowed" : ""}`}
+         } ${disabled ? "cursor-not-allowed opacity-60 hover:opacity-60" : ""}`}
          disabled={disabled}
          onClick={onClick}
       >
-         {icon ? <i className="float-left mr-2 my-auto">{icon}</i> : ""}
+         {icon ? <i className="float-left my-auto mr-2">{icon}</i> : ""}
          <span className="float-left">{children}</span>
       </button>
    );

@@ -23,7 +23,7 @@ function Skills() {
             <SplideTech />
          </div>
          <div className="flex justify-center">
-            <div className="flex flex-col justify-center md:flex-row md:flex-wrap w-full max-w-5xl gap-4 md:gap-6 lg:gap-x-8 z-10">
+            <div className="z-10 flex w-full max-w-5xl flex-col justify-center gap-4 md:flex-row md:flex-wrap md:gap-6 lg:gap-x-8">
                {items.map((item: ItemsT, index: number) => (
                   <SkillsList key={index} items={item} />
                ))}

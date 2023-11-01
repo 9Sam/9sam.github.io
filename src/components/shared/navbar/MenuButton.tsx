@@ -20,12 +20,12 @@ function MenuButton({ isOpen, setIsOpen }: Props) {
          onClick={() => setIsOpen(!isOpen)}
          data-collapse-toggle="mobile-menu"
          type="button"
-         className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:fill-l-primary dark:hover:fill-d-primary focus:outline-none  dark:fill-white dark:text-white dark:focus:ring-d-primary"
+         className="ml-3 inline-flex items-center rounded-lg p-2 text-sm hover:fill-l-primary focus:outline-none dark:fill-white dark:text-white  dark:hover:fill-d-primary dark:focus:ring-d-primary md:hidden"
          aria-controls="mobile-menu-2"
          aria-expanded="false"
          ref={buttonRef}
       >
-         <MdMenu className="w-5 h-5" fill="dark" />
+         <MdMenu className="h-5 w-5" fill="dark" />
       </button>
    );
 }

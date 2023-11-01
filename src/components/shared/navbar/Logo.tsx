@@ -10,11 +10,11 @@ function Logo({ isDarkMode }: Props) {
    return (
       <NavLink to="/" className="flex dark:text-light-gray">
          <img
-            className="h-10 w-7 mr-3"
+            className="mr-3 h-10 w-7"
             src={isDarkMode ? darkLogo : lightLogo}
             alt="icon"
          />
-         <span className="self-center text-md font-semibold whitespace-nowrap dark:text-light-gray">
+         <span className="text-md self-center whitespace-nowrap font-semibold dark:text-light-gray">
             Samuel Casco
          </span>
       </NavLink>

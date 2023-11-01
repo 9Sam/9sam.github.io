@@ -25,7 +25,7 @@ function ContactIcons({ isCenter }: contactT) {
    return (
       <div className="text z-10">
          <div
-            className={`flex mx-auto gap-3 p-2 ${
+            className={`mx-auto flex gap-3 p-2 ${
                isCenter ? "justify-center" : ""
             }`}
          >

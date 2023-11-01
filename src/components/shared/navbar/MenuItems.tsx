@@ -63,14 +63,14 @@ function MenuItems({ isOpen, setIsOpen }: Props) {
    return (
       <m.div
          animate={{}}
-         className={`navbar w-full md:block md:w-auto transition ${
+         className={`navbar w-full transition md:block md:w-auto ${
             isOpen ? "top-20 opacity-100" : "top-[-490px]"
-         } md:opacity-100 opacity-0 `}
+         } opacity-0 md:opacity-100 `}
          id="mobile-menu"
          ref={ulRef}
       >
          <ul
-            className={`flex flex-col dark:bg-dark items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium text-dark dark:text-light-gray
+            className={`mt-4 flex flex-col items-center text-dark dark:bg-dark dark:text-light-gray md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium
              ${isOpen ? "" : "hidden md:flex"}`}
          >
             {links.map((link, index) => {
@@ -84,11 +84,11 @@ function MenuItems({ isOpen, setIsOpen }: Props) {
                               ? scrollWithOffset(el, true)
                               : scrollWithOffset(el, false)
                         }
-                        className={`block py-2 md:py-0 bg-white dark:bg-dark ${
+                        className={`block bg-white py-2 dark:bg-dark md:py-0 ${
                            link.redirect === `/#${activeSection}` ||
                            link.redirect === `#${activeSection}`
-                              ? "text-l-primary dark:text-d-primary font-bold"
-                              : "text-dark dark:text-white hover:text-l-primary dark:hover:text-d-primary"
+                              ? "font-bold text-l-primary dark:text-d-primary"
+                              : "text-dark hover:text-l-primary dark:text-white dark:hover:text-d-primary"
                         }`}
                         onClick={() => handleClick()}
                         aria-current="page"
@@ -98,7 +98,7 @@ function MenuItems({ isOpen, setIsOpen }: Props) {
                   </li>
                );
             })}
-            <div className="flex flex-col md:flex-row w-full">
+            <div className="flex w-full flex-col md:flex-row">
                <DarkModeButton />
                <LanguageButton />
             </div>

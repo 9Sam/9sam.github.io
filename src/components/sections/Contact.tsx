@@ -19,14 +19,14 @@ function Contact() {
             "service_t8tz5p8",
             "template_t1yywrj",
             formRef.current ? formRef?.current : "",
-            "gJZ46YzwBsWV5tFji"
+            "gJZ46YzwBsWV5tFji",
          )
          .then(
             (_result: any) => {
                setIsOpen(true);
                window.scrollTo(0, document.body.scrollHeight);
             },
-            (_error) => {}
+            (_error) => {},
          );
 
       formRef.current?.reset();
@@ -54,7 +54,7 @@ function Contact() {
             <div className="mb-6">
                <label
                   htmlFor="name"
-                  className="block mb-2 text-sm font-medium dark:text-light-gray"
+                  className="mb-2 block text-sm font-medium dark:text-light-gray"
                >
                   Name
                </label>
@@ -62,14 +62,14 @@ function Contact() {
                   type="name"
                   id="name"
                   name="name"
-                  className="shadow text-dark text-sm rounded-lg focus:border-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
+                  className="focus:border-secondary block w-full rounded-lg p-2.5 text-sm text-dark shadow dark:bg-white dark:text-dark"
                   required
                />
             </div>
             <div className="mb-6">
                <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium dark:text-light-gray"
+                  className="mb-2 block text-sm font-medium dark:text-light-gray"
                >
                   Email
                </label>
@@ -77,14 +77,14 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="shadow text-dark  text-sm rounded-lg focus:border-l-secondary block w-full p-2.5 dark:bg-white dark:text-dark"
+                  className="block w-full  rounded-lg p-2.5 text-sm text-dark shadow focus:border-l-secondary dark:bg-white dark:text-dark"
                   required
                />
             </div>
             <div className="mb-6">
                <label
                   htmlFor="message"
-                  className="block mb-2 text-sm font-medium dark:text-light-gray"
+                  className="mb-2 block text-sm font-medium dark:text-light-gray"
                >
                   Message
                </label>
@@ -92,11 +92,11 @@ function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="shadow text-gray-900 text-sm rounded-lg  focus:ring-primary block w-full p-2.5 dark:bg-white dark:placeholder-white dark:text-dark"
+                  className="focus:ring-primary block w-full rounded-lg  p-2.5 text-sm text-gray-900 shadow dark:bg-white dark:text-dark dark:placeholder-white"
                   required
                ></textarea>
             </div>
-            <div className="text-center my-10">
+            <div className="my-10 text-center">
                <Button type="primary" htmlType="submit">
                   Send email
                </Button>

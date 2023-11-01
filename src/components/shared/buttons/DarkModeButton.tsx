@@ -21,7 +21,7 @@ function DarkModeButton() {
          transition={{ duration: 0.5 }}
          whileTap={{ scale: 0.9 }}
          onClick={toggleDarkMode}
-         className="block mx-100 md:mx-0 py-2 md:py-0 pr-4 pl-3 m-auto md:m-0 cursor-pointer"
+         className="mx-100 m-auto block cursor-pointer py-2 pr-4 pl-3 md:m-0 md:mx-0 md:py-0"
       >
          {isDarkMode ? (
             <MdLightMode className={iconClasses} />

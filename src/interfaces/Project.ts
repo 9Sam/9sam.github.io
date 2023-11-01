@@ -1,7 +1,7 @@
 export interface ImageI {
    name: string;
    text: string;
-   src: string;   
+   src: string;
    object: string;
 }
 

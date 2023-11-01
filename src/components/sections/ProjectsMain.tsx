@@ -7,7 +7,7 @@ function ProjectsMain() {
    return (
       <section id="projects" data-section className={`${sectionClasses}`}>
          <Title title="Projects" />
-         <div className="flex flex-wrap justify-center lg:justify-between gap-2 gap-y-5 bg-gd">
+         <div className="bg-gd flex flex-wrap justify-center gap-2 gap-y-5 lg:justify-between">
             {data
                .filter((project) => project.main === true)
                .map((project: any, index) => {

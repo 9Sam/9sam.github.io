@@ -8,4 +8,4 @@ export interface TechnologyI {
 export type ItemsT = {
    title: string;
    technologies: TechnologyI[];
-}
+};

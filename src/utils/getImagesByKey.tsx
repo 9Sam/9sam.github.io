@@ -19,7 +19,6 @@ import unocellMainPage from "../assets/img/unocell/unocell_main_page.png";
 import unocellWebpage from "../assets/img/unocell/unocell_webpage.png";
 import usersPage from "../assets/img/unocell/users_page.png";
 
-
 const images: any = {
    unocellLogo,
    meetilogo,
@@ -40,11 +39,11 @@ const images: any = {
    permissions,
    unocellMainPage,
    unocellWebpage,
-   usersPage
+   usersPage,
 };
 
 function getImageByKey(key: string) {
-  return (key) ? images[key] : "";
+   return key ? images[key] : "";
 }
 
 export default getImageByKey;

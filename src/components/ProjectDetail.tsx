@@ -27,15 +27,8 @@ function ProjectDetail() {
    });
 
    const location = useLocation();
-   const {
-      name,
-      description,
-      points,
-      tags,
-      images,
-      link,
-      github,
-   } = location.state;
+   const { name, description, points, tags, images, link, github } =
+      location.state;
 
    const imagesSources = images.map((image: any) => image.src);
 
@@ -57,11 +50,11 @@ function ProjectDetail() {
    };
 
    return (
-      <div className="bg-white relative dark:bg-dark h-auto dark:text-white p-5">
+      <div className="relative h-auto bg-white p-5 dark:bg-dark dark:text-white">
          <section className="overflow-hidden text-gray-700 ">
             <Title title={name} />
             <div className="text-center">{description}</div>
-            <div className="flex flex-wrap max-w-3xl mx-auto justify-center gap-2 my-4">
+            <div className="mx-auto my-4 flex max-w-3xl flex-wrap justify-center gap-2">
                {tags?.map((tag: string, index: number) => {
                   return (
                      <Tag size="w-4 h-4" key={index}>
@@ -70,11 +63,11 @@ function ProjectDetail() {
                   );
                })}
             </div>
-            <div className="flex justify-center gap-2 my-10">
+            <div className="my-10 flex justify-center gap-2">
                <Button
                   onClick={() => window.open(github)}
                   type="primary"
-                  icon={<AiFillCode className="w-6 h-6" />}
+                  icon={<AiFillCode className="h-6 w-6" />}
                   disabled={github.length > 0 ? false : true}
                >
                   {github.length > 0 ? "See code" : "Private code"}
@@ -83,7 +76,7 @@ function ProjectDetail() {
                   <Button
                      onClick={() => window.open(link)}
                      type="primary"
-                     icon={<VscPreview className="w-6 h-6" />}
+                     icon={<VscPreview className="h-6 w-6" />}
                   >
                      See Preview
                   </Button>
@@ -91,12 +84,12 @@ function ProjectDetail() {
                   ""
                )}
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex items-center justify-center">
                <ul className="max-w-3xl">
                   {points.map((point: string, index: number) => {
                      return (
                         <div key={index} className="flex flex-row">
-                           <AiFillCheckCircle className="w-5 h-5 mr-2 fill-secondary" />
+                           <AiFillCheckCircle className="fill-secondary mr-2 h-5 w-5" />
                            <p key={index} className="w-full">
                               {point}
                            </p>
@@ -105,17 +98,17 @@ function ProjectDetail() {
                   })}
                </ul>
             </div>
-            <hr className="w-56 mx-auto mt-10 text-sm text-primary" />
-            <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-               <div className="text-center mb-4">
+            <hr className="text-primary mx-auto mt-10 w-56 text-sm" />
+            <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+               <div className="mb-4 text-center">
                   {images.length > 1 ? (
                      <Button
                         type="primary"
                         icon={
                            collapsed ? (
-                              <IoIosArrowDropdownCircle className="w-6 h-6" />
+                              <IoIosArrowDropdownCircle className="h-6 w-6" />
                            ) : (
-                              <IoIosArrowDropupCircle className="w-6 h-6" />
+                              <IoIosArrowDropupCircle className="h-6 w-6" />
                            )
                         }
                         onClick={handleCollapse}
@@ -129,23 +122,23 @@ function ProjectDetail() {
                <div
                   className={`${
                      collapsed ? "collapse hidden" : ""
-                  } p-5 overflow-hidden`}
+                  } overflow-hidden p-5`}
                   id="collapseExample"
                >
-                  <div className="flex flex-wrap -m-1 md:-m-2">
+                  <div className="-m-1 flex flex-wrap md:-m-2">
                      {images.map((image: ImageI, index: number) => {
                         return (
                            <div
                               key={index}
-                              className="flex flex-wrap w-full md:w-1/2 lg:w-1/4"
+                              className="flex w-full flex-wrap md:w-1/2 lg:w-1/4"
                            >
-                              <div className="w-full p-1 md:p-2 animate__animated animate__backInDown">
+                              <div className="animate__animated animate__backInDown w-full p-1 md:p-2">
                                  <img
                                     alt="gallery"
                                     onClick={() =>
                                        openLightboxOnSlide(index + 1)
                                     }
-                                    className="block opacity-90 hover:opacity-100 cursor-pointer object-cover object-center w-full h-full rounded-lg"
+                                    className="block h-full w-full cursor-pointer rounded-lg object-cover object-center opacity-90 hover:opacity-100"
                                     src={image.src}
                                  />
                               </div>

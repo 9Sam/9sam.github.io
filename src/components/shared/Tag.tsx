@@ -14,13 +14,13 @@ interface PropsI {
 function Tag({ children, size }: PropsI) {
    const handleIcon = () => {
       let frontIcon = frontendItems.findIndex(
-         (item) => item.name.toLowerCase() === children.toLowerCase()
+         (item) => item.name.toLowerCase() === children.toLowerCase(),
       );
       let backIcon = backendItems.findIndex(
-         (item) => item.name.toLowerCase() === children.toLowerCase()
+         (item) => item.name.toLowerCase() === children.toLowerCase(),
       );
       let otherIcon = othersItems.findIndex(
-         (item) => item.name.toLowerCase() === children.toLowerCase()
+         (item) => item.name.toLowerCase() === children.toLowerCase(),
       );
 
       if (frontIcon >= 0) {
@@ -35,18 +35,18 @@ function Tag({ children, size }: PropsI) {
 
       return (
          <RiHashtag
-            className="w-6 h-6 fill-white"
+            className="h-6 w-6 fill-white"
             style={{ fill: "#25B6D2" }}
          />
       );
    };
 
    return (
-      <div className="rounded shadow p-1 flex justify-center bg-secondary bg-opacity-10 text-dark dark:border dark:border-secondary dark:border-opacity-70  dark:bg-dark dark:text-light-gray text-xs opacity-8 dark:opacity-100">
-         <div className="w-auto mr-1">
+      <div className="bg-secondary dark:border-secondary opacity-8 flex justify-center rounded bg-opacity-10 p-1 text-xs text-dark shadow  dark:border dark:border-opacity-70 dark:bg-dark dark:text-light-gray dark:opacity-100">
+         <div className="mr-1 w-auto">
             {React.cloneElement(handleIcon(), { className: size })}
          </div>
-         <div className="w-auto my-auto">{children}</div>
+         <div className="my-auto w-auto">{children}</div>
       </div>
    );
 }

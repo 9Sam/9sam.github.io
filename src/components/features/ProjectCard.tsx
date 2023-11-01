@@ -23,10 +23,10 @@ function ProjectCard({ project }: projectT) {
 
    if (project) {
       return (
-         <div className="w-[350px] bg-white rounded-md h-auto shadow-md dark:bg-dark dark:border dark:border-d-primary dark:border-opacity-50 z-10">
+         <div className="z-10 h-auto w-[350px] rounded-md bg-white shadow-md dark:border dark:border-d-primary dark:border-opacity-50 dark:bg-dark">
             <div className="cursor-pointer" onClick={() => setState(true)}>
                <img
-                  className="rounded-t-md h-40 object-cover w-full"
+                  className="h-40 w-full rounded-t-md object-cover"
                   // src={getImageByKey((project.front) ? project.front : "")}
                   src={project.front}
                   alt=""
@@ -51,17 +51,17 @@ function ProjectCard({ project }: projectT) {
                   })}
                </div>
             </div>
-            <div className="text-center h-auto pb-5 pt-1 px-5">
+            <div className="h-auto px-5 pb-5 pt-1 text-center">
                {/* <hr className="w-full mx-auto text-sm text-primary mb-5" /> */}
                {React.cloneElement(
                   <Button
                      onClick={() => setState(true)}
                      type="primary"
-                     icon={<IoOpenOutline className="w-6 h-6" />}
+                     icon={<IoOpenOutline className="h-6 w-6" />}
                   >
                      See more
                   </Button>,
-                  { className: "" }
+                  { className: "" },
                )}
             </div>
          </div>

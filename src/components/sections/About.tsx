@@ -35,7 +35,7 @@ function About() {
    return (
       <section id="about" data-section className={sectionClasses}>
          <Title title="About me" />
-         <div className="flex flex-col md:flex-row gap-5 my-10">
+         <div className="my-10 flex flex-col gap-5 md:flex-row">
             {showCards.map((card, _index) => {
                return (
                   <ShowCardMain
@@ -47,14 +47,14 @@ function About() {
                );
             })}
          </div>
-         <div className="blur-effect text-dark text-opacity-70 text-center rounded-md shadow  h-auto z-10">
+         <div className="blur-effect z-10 h-auto rounded-md text-center text-dark  text-opacity-70 shadow">
             <div className="flex flex-col md:flex-row">
                <Computer
-                  className="computer-icon w-full h-full fillit"
+                  className="computer-icon fillit h-full w-full"
                   color="#1f2937"
                   fill="red"
                />
-               <p className="max-w-2/3 mx-auto m-auto p-5 text-lg dark:text-light-gray">
+               <p className="max-w-2/3 m-auto mx-auto p-5 text-lg dark:text-light-gray">
                   <i>{MessagesE.ABOUT_ME}</i>
                </p>
             </div>

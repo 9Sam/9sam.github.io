@@ -25,28 +25,28 @@ function LanguageButton() {
    useClickOutside([ulRef, buttonRef, isOpen, setIsOpen]);
 
    return (
-      <div className="absoulte md:relative flex flex-col justify-center">
+      <div className="absoulte flex flex-col justify-center md:relative">
          <m.button
             whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
             transition={{ duration: 0.5 }}
             ref={buttonRef}
             onClick={() => setIsOpen(!isOpen)}
-            className="mx-auto md:mx-0 py-2 md:py-0 pr-4 pl-3 cursor-pointer"
+            className="mx-auto cursor-pointer py-2 pr-4 pl-3 md:mx-0 md:py-0"
          >
-            <MdLanguage className="w-6 h-6 hover:fill-l-primary dark:hover:fill-d-primary" />
+            <MdLanguage className="h-6 w-6 hover:fill-l-primary dark:hover:fill-d-primary" />
          </m.button>
-         <hr className={`${isOpen ? "block" : "hidden"} md:hidden my-2`} />
+         <hr className={`${isOpen ? "block" : "hidden"} my-2 md:hidden`} />
          <m.ul
             animate={{ opacity: isOpen ? 1 : 0 }}
             ref={ulRef}
-            className={`relative md:absolute mx-auto md:top-10 md:right-0 flex flex-col md:shadow-md w-full md:w-32 rounded bg-white dark:bg-dark transition-all duration-300 ${
+            className={`relative mx-auto flex w-full flex-col rounded bg-white transition-all duration-300 dark:bg-dark md:absolute md:top-10 md:right-0 md:w-32 md:shadow-md ${
                !isOpen ? "hidden" : ""
             }`}
          >
             {languages.map((language, index) => (
                <li
                   key={index}
-                  className="py-2 px-4 text-center hover:bg-l-primary dark:hover:bg-d-primary hover:text-white dark:hover:text-dark rounded cursor-pointer"
+                  className="cursor-pointer rounded py-2 px-4 text-center hover:bg-l-primary hover:text-white dark:hover:bg-d-primary dark:hover:text-dark"
                   onClick={(e) => handleLanguageClick(e.target)}
                >
                   {`(${language.code}) ${language.name}`}

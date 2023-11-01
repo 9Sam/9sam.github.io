@@ -9,13 +9,7 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/unocell/login.png",
-      "tags": [
-         "HTML5",
-         "Bootstrap",
-         "Php",
-         "NodeJs",
-         "MySql"
-      ],
+      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "MySql"],
       "images": [
          {
             "name": "Login",
@@ -134,13 +128,7 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": [
-         "React",
-         "Redux",
-         "Tailwindcss",
-         "HTML5",
-         "MUI"
-      ],
+      "tags": ["React", "Redux", "Tailwindcss", "HTML5", "MUI"],
       "images": [
          {
             "name": "",
@@ -162,11 +150,7 @@
          "Creation of api endpoints and its respective validations"
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": [
-         "NodeJs",
-         "ExpressJs",
-         "MongoDB"
-      ],
+      "tags": ["NodeJs", "ExpressJs", "MongoDB"],
       "images": [
          {
             "name": "",
@@ -189,12 +173,7 @@
          "Animations added with AnimationCSS library and javascript."
       ],
       "front": "/img/portfolio/portfoliocover.png",
-      "tags": [
-         "HTML5",
-         "React",
-         "ReactRouterV6",
-         "Tailwindcss"
-      ],
+      "tags": ["HTML5", "React", "ReactRouterV6", "Tailwindcss"],
       "images": [
          {
             "name": "",
@@ -216,10 +195,7 @@
          "Text to speech implemented with native browser API."
       ],
       "front": "/img/aoe_assistant/assistant.jpg",
-      "tags": [
-         "Javascript",
-         "CSS"
-      ],
+      "tags": ["Javascript", "CSS"],
       "images": [
          {
             "name": "",
@@ -240,12 +216,7 @@
          "Responsive layout made with tailwindcss utility classes and css3 properties."
       ],
       "front": "/img/portfolio/portfoliocover.png",
-      "tags": [
-         "React",
-         "NextJs",
-         "NextAuth",
-         "Tailwindcss"
-      ],
+      "tags": ["React", "NextJs", "NextAuth", "Tailwindcss"],
       "images": [
          {
             "name": "",

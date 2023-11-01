@@ -19,7 +19,7 @@ function App() {
 
    const particlesLoaded = useCallback(
       async (_container: Container | undefined) => {},
-      []
+      [],
    );
 
    const { isDarkMode } = useDarkMode();
@@ -34,7 +34,7 @@ function App() {
                options={getTsConfig(isDarkMode)}
             />
             <BrowserRouter>
-               <main className="flex flex-col min-h-scree">
+               <main className="min-h-scree flex flex-col">
                   <Navbar />
                   <div className="">
                      <Routes>

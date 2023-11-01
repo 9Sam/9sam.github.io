@@ -5,10 +5,10 @@ type TitleT = {
 function Title({ title }: TitleT) {
    return (
       <div className="mb-12">
-         <h2 className="text-center text-2xl md:text-4xl mt-16 py-5 dark:text-light-gray">
+         <h2 className="mt-16 py-5 text-center text-2xl dark:text-light-gray md:text-4xl">
             {title}
          </h2>
-         <hr className="w-56 h-1 mx-auto bg-gradient-to-r from-l-secondary to-l-primary dark:from-d-secondary dark:to-d-primary border-0 rounded-sm " />
+         <hr className="mx-auto h-1 w-56 rounded-sm border-0 bg-gradient-to-r from-l-secondary to-l-primary dark:from-d-secondary dark:to-d-primary " />
       </div>
    );
 }

@@ -14,7 +14,7 @@ function useIntersectionObserver({ setActiveSection }: Props) {
 
       // Find the section that is closest to the top of the viewport
       const closestSection = sectionTops.reduce((prev, curr) =>
-         Math.abs(curr.top) < Math.abs(prev.top) ? curr : prev
+         Math.abs(curr.top) < Math.abs(prev.top) ? curr : prev,
       ).section;
 
       if (closestSection) {

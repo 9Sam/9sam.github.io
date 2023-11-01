@@ -10,36 +10,36 @@ img.src = "/icons/code-svgrepo-com 1.svg";
 function HomeSection() {
    return (
       <header
-         className="flex h-screen max-h-screen mb-20 w-screen relative md:p-10"
+         className="relative mb-20 flex h-screen max-h-screen w-screen md:p-10"
          data-section
          id="home"
       >
          {/* Bottom */}
-         <div className="left-triangle animation absolute bottom-[-18px] md:bottom-[-35px] left-0">
+         <div className="left-triangle animation absolute bottom-[-18px] left-0 md:bottom-[-35px]">
             <TriangleSvgLeft
-               className="triangle animate__animated animate__fadeInLeft animate__delay-1s w-40 h-40 md:w-80 md:h-80"
+               className="triangle animate__animated animate__fadeInLeft animate__delay-1s h-40 w-40 md:h-80 md:w-80"
                id="left-triangle"
             />
          </div>
          <section
-            className="flex relative my-auto w-full justify-center"
+            className="relative my-auto flex w-full justify-center"
             data-section
             id="home"
          >
             <div className="flex flex-row">
-               <div className="w-1/3 animate__animated animate__rotateIn my-auto">
-                  <CodeSvg className="code__icon w-full h-full md:w-64 md:h-64 lg:w-72 lg:h-72" />
+               <div className="animate__animated animate__rotateIn my-auto w-1/3">
+                  <CodeSvg className="code__icon h-full w-full md:h-64 md:w-64 lg:h-72 lg:w-72" />
                </div>
-               <div className="w-2/3 animate__animated animate__fadeIn animate__delay-1s my-auto ml-6 md:ml-12 space-y-1 md:space-y-3">
+               <div className="animate__animated animate__fadeIn animate__delay-1s my-auto ml-6 w-2/3 space-y-1 md:ml-12 md:space-y-3">
                   <TextBanner />
                   <ContactIcons />
                </div>
             </div>
          </section>
          {/* Top */}
-         <div className="right-triangle animation absolute top-[40px] md:top-5 right-0">
+         <div className="right-triangle animation absolute top-[40px] right-0 md:top-5">
             <TriangleSvgRight
-               className="triangle animate__animated animate__fadeInRight animate__delay-1s w-40 h-40 md:w-80 md:h-80"
+               className="triangle animate__animated animate__fadeInRight animate__delay-1s h-40 w-40 md:h-80 md:w-80"
                id="right-triangle"
             />
          </div>
