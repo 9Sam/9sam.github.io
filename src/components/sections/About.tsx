@@ -15,7 +15,7 @@ const showCards = [
       id: 1,
       icon: <HiComputerDesktop className={`${iconsClasses}`} />,
       imageAlt: "Experience icon",
-      text: "1.6 years working as a profesional full-stack web developer.",
+      text: "1.6 years working as a profesional full-stack developer.",
    },
    {
       id: 2,

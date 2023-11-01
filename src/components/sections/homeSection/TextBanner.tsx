@@ -5,8 +5,9 @@ function TextBanner() {
             Samuel Casco
          </h2>
          <h2 className="text-2xl text-gray-500 dark:text-gray-400 md:text-5xl">
-            Full-Stack web developer
+            Full-Stack Developer
          </h2>
+         <span className="text-2xl text-gray-500 italic">"Bringing code to life"</span>
       </div>
    );
 }
