@@ -5,6 +5,7 @@ import {
    othersItems,
 } from "../../utils/Technologies";
 import { RiHashtag } from "react-icons/ri";
+import { TechnologyI } from "../../types";
 
 interface PropsI {
    children: string;
@@ -12,26 +13,23 @@ interface PropsI {
 }
 
 function Tag({ children, size }: PropsI) {
-   const handleIcon = () => {
-      let frontIcon = frontendItems.findIndex(
-         (item) => item.name.toLowerCase() === children.toLowerCase(),
+   const getIcon = (items: TechnologyI[]) => {
+      return items.findIndex(
+         (item: TechnologyI) =>
+            item.name.toLowerCase() === children.toLowerCase(),
       );
-      let backIcon = backendItems.findIndex(
-         (item) => item.name.toLowerCase() === children.toLowerCase(),
-      );
-      let otherIcon = othersItems.findIndex(
-         (item) => item.name.toLowerCase() === children.toLowerCase(),
-      );
+   };
 
-      if (frontIcon >= 0) {
-         return frontendItems[frontIcon]?.component;
-      }
-      if (backIcon >= 0) {
-         return backendItems[backIcon]?.component;
-      }
-      if (otherIcon >= 0) {
-         return othersItems[otherIcon]?.component;
-      }
+   const handleIcon = () => {
+      let frontIcon = getIcon(frontendItems);
+      let backIcon = getIcon(backendItems);
+      let otherIcon = getIcon(othersItems);
+
+      if (frontIcon >= 0) return frontendItems[frontIcon]?.component;
+
+      if (backIcon >= 0) return backendItems[backIcon]?.component;
+
+      if (otherIcon >= 0) return othersItems[otherIcon]?.component;
 
       return (
          <RiHashtag
@@ -42,7 +40,7 @@ function Tag({ children, size }: PropsI) {
    };
 
    return (
-      <div className="bg-secondary dark:border-secondary opacity-8 flex justify-center rounded bg-opacity-10 p-1 text-xs text-dark shadow  dark:border dark:border-opacity-70 dark:bg-dark dark:text-light-gray dark:opacity-100">
+      <div className="flex justify-center rounded shadow bg-cyan-500 bg-opacity-10 border border-transparent dark:border-l-secondary p-1 text-xs text-dark dark:border-opacity-70 dark:bg-cyan-10 dark:text-light-gray">
          <div className="mr-1 w-auto">
             {React.cloneElement(handleIcon(), { className: size })}
          </div>

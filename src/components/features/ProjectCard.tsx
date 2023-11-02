@@ -32,7 +32,7 @@ function ProjectCard({ project }: projectT) {
                   bottomColor={`${project.window?.bottomColor}`}
                />
             </div>
-            <div className="p-5 md:h-64">
+            <div className="px-5 pt-3 md:h-56">
                <a href="#">
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-light-gray">
                      {project.name}
