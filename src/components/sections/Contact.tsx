@@ -47,10 +47,10 @@ function Contact() {
       <section
          id="contact"
          data-section
-         className={`${sectionClasses} lg:mb-48`}
+         className={`${sectionClasses} px-4 lg:px-40 lg:mb-48`}
       >
          <Title title="Contact" />
-         <form ref={formRef} onSubmit={sendEmail} className="z-50">
+         <form ref={formRef} onSubmit={sendEmail} className="z-10">
             <div className="mb-6">
                <label
                   htmlFor="name"
@@ -62,7 +62,7 @@ function Contact() {
                   type="name"
                   id="name"
                   name="name"
-                  className="focus:border-secondary block w-full rounded-lg p-2.5 text-sm text-dark shadow dark:bg-white dark:text-dark"
+                  className="focus:border-secondary block w-full rounded p-2.5 text-sm text-dark shadow-md dark:bg-white dark:text-dark"
                   required
                />
             </div>
@@ -77,7 +77,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="block w-full  rounded-lg p-2.5 text-sm text-dark shadow focus:border-l-secondary dark:bg-white dark:text-dark"
+                  className="block w-full  rounded p-2.5 text-sm text-dark shadow-md focus:border-l-secondary dark:bg-white dark:text-dark"
                   required
                />
             </div>
@@ -92,7 +92,7 @@ function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="focus:ring-primary block w-full rounded-lg  p-2.5 text-sm text-gray-900 shadow dark:bg-white dark:text-dark dark:placeholder-white"
+                  className="focus:ring-primary block w-full rounded  p-2.5 text-sm text-gray-900 shadow-md dark:bg-white dark:text-dark dark:placeholder-white"
                   required
                ></textarea>
             </div>
