@@ -9,7 +9,13 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/unocell/login.png",
-      "tags": ["HTML5", "Bootstrap", "Php", "NodeJs", "MySql"],
+      "tags": [
+         "HTML5",
+         "Bootstrap",
+         "Php",
+         "NodeJs",
+         "MySql"
+      ],
       "images": [
          {
             "name": "Login",
@@ -114,6 +120,10 @@
             "object": "unocellMainPage"
          }
       ],
+      "window": {
+         "topColor": "#5064FF",
+         "bottomColor": "#5064FF"
+      },
       "main": true,
       "github": "",
       "link": ""
@@ -128,7 +138,13 @@
          "Collaboration with the construction of documentation for both the administrator and the employee user."
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": ["React", "Redux", "Tailwindcss", "HTML5", "MUI"],
+      "tags": [
+         "React",
+         "Redux",
+         "Tailwindcss",
+         "HTML5",
+         "MUI"
+      ],
       "images": [
          {
             "name": "",
@@ -137,6 +153,10 @@
             "object": ""
          }
       ],
+      "window": {
+         "topColor": "#FF7E50",
+         "bottomColor": "#FF7E50"
+      },
       "main": true,
       "github": "https://github.com/9Sam/Straw_poll_meeting_app/tree/master/frontend",
       "link": ""
@@ -150,7 +170,11 @@
          "Creation of api endpoints and its respective validations"
       ],
       "front": "/img/meeti/login.jpg",
-      "tags": ["NodeJs", "ExpressJs", "MongoDB"],
+      "tags": [
+         "NodeJs",
+         "ExpressJs",
+         "MongoDB"
+      ],
       "images": [
          {
             "name": "",
@@ -159,6 +183,10 @@
             "object": ""
          }
       ],
+      "window": {
+         "topColor": "#E2E8F0",
+         "bottomColor": "#E2E8F0"
+      },
       "main": false,
       "github": "https://github.com/9Sam/Straw_poll_meeting_app/tree/master/api",
       "link": ""
@@ -173,7 +201,12 @@
          "Animations added with AnimationCSS library and javascript."
       ],
       "front": "/img/portfolio/portfoliocover.png",
-      "tags": ["HTML5", "React", "ReactRouterV6", "Tailwindcss"],
+      "tags": [
+         "HTML5",
+         "React",
+         "ReactRouterV6",
+         "Tailwindcss"
+      ],
       "images": [
          {
             "name": "",
@@ -182,6 +215,10 @@
             "object": ""
          }
       ],
+      "window": {
+         "topColor": "#E2E8F0",
+         "bottomColor": "#E2E8F0"
+      },
       "main": true,
       "github": "https://github.com/9Sam/Meeti-api",
       "link": "https://9sam.github.io"
@@ -195,7 +232,10 @@
          "Text to speech implemented with native browser API."
       ],
       "front": "/img/aoe_assistant/assistant.jpg",
-      "tags": ["Javascript", "CSS"],
+      "tags": [
+         "Javascript",
+         "CSS"
+      ],
       "images": [
          {
             "name": "",
@@ -205,6 +245,10 @@
          }
       ],
       "main": false,
+      "window": {
+         "topColor": "#E2E8F0",
+         "bottomColor": "#E2E8F0"
+      },
       "github": "https://github.com/9Sam/Meeti-api",
       "link": "https://9sam.github.io"
    },
@@ -216,7 +260,12 @@
          "Responsive layout made with tailwindcss utility classes and css3 properties."
       ],
       "front": "/img/portfolio/portfoliocover.png",
-      "tags": ["React", "NextJs", "NextAuth", "Tailwindcss"],
+      "tags": [
+         "React",
+         "NextJs",
+         "NextAuth",
+         "Tailwindcss"
+      ],
       "images": [
          {
             "name": "",
@@ -226,6 +275,10 @@
          }
       ],
       "main": false,
+      "window": {
+         "topColor": "#E2E8F0",
+         "bottomColor": "#E2E8F0"
+      },
       "github": "https://github.com/9Sam/Meeti-api",
       "link": "https://9sam.github.io"
    }

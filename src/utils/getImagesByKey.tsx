@@ -1,4 +1,3 @@
-import unocellLogo from "../assets/img/unocell/login.png";
 import meetilogo from "../assets/img/meeti/login.jpg";
 import assignComissions from "../assets/img/unocell/asign_comissions.png";
 import comissions from "../assets/img/unocell/comissions.png";
@@ -20,7 +19,6 @@ import unocellWebpage from "../assets/img/unocell/unocell_webpage.png";
 import usersPage from "../assets/img/unocell/users_page.png";
 
 const images: any = {
-   unocellLogo,
    meetilogo,
    assignComissions,
    comissions,

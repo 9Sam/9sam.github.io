@@ -4,6 +4,7 @@ import { ProjectI } from "../../interfaces/Project";
 import { IoOpenOutline } from "react-icons/io5";
 import Button from "../shared/buttons/Button";
 import Tag from "../shared/Tag";
+import ProjectWindow from "./ProjectWindow/ProjectWindow";
 
 type projectT = {
    project: ProjectI;
@@ -25,11 +26,10 @@ function ProjectCard({ project }: projectT) {
       return (
          <div className="z-10 h-auto w-[350px] rounded-md bg-white shadow-md dark:border dark:border-d-primary dark:border-opacity-50 dark:bg-dark">
             <div className="cursor-pointer" onClick={() => setState(true)}>
-               <img
-                  className="h-40 w-full rounded-t-md object-cover"
-                  // src={getImageByKey((project.front) ? project.front : "")}
-                  src={project.front}
-                  alt=""
+               <ProjectWindow
+                  imageSrc={project.front ? project.front : ""}
+                  topColor={`${project.window?.topColor}`}
+                  bottomColor={`${project.window?.bottomColor}`}
                />
             </div>
             <div className="p-5 md:h-64">
@@ -52,7 +52,6 @@ function ProjectCard({ project }: projectT) {
                </div>
             </div>
             <div className="h-auto px-5 pb-5 pt-1 text-center">
-               {/* <hr className="w-full mx-auto text-sm text-primary mb-5" /> */}
                {React.cloneElement(
                   <Button
                      onClick={() => setState(true)}
@@ -61,7 +60,7 @@ function ProjectCard({ project }: projectT) {
                   >
                      See more
                   </Button>,
-                  { className: "" },
+                  { className: "" }
                )}
             </div>
          </div>
