@@ -22,13 +22,13 @@ function HomeSection() {
             />
          </div>
          <section
-            className="relative my-auto flex w-full justify-center"
+            className="relative my-auto flex w-full md:justify-center"
             data-section
             id="home"
          >
-            <div className="flex flex-row">
-               <div className="animate__animated animate__rotateIn my-auto w-1/3">
-                  <CodeSvg className="code__icon h-full w-full md:h-64 md:w-64 lg:h-72 lg:w-72" />
+            <div className="flex flex-row mx-auto">
+               <div className="animate__animated animate__rotateIn my-auto w-[120px] pl-2 md:w-1/3">
+                  <CodeSvg className="code__icon h-full w-full mr-4 md:mr-28 md:h-64 md:w-64 lg:h-72 lg:w-72" />
                </div>
                <div className="animate__animated animate__fadeIn animate__delay-1s my-auto ml-6 w-2/3 space-y-1 md:ml-12 md:space-y-3">
                   <TextBanner />
