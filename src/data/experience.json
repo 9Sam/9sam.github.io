@@ -1,0 +1,72 @@
+[
+   {
+      "id": 1,
+      "name": "Baas Technologies",
+      "about": "Baas Technologies is company located in Honduras that offers IT related outsourcing services to several companies around the country.",
+      "activities": [
+         "Development and integration of screens and features for the client's internal administration system using the Angular framework and related technologies.",
+         "Analysis and planning for the construction of optimal solutions along the other members of the development team",
+         "Development of REST APIs and microservices applying SOLID principles with Nestjs, CassandraDB, Kafka and MinIO",
+         "Unit testing using Jest for NestJS and Jazmine for Angular, integration testing and documentation for both front-end and back-end applications",
+         "Dockerization of all front-end and back-end projects"
+      ],
+      "achievents": [
+         "I worked with the team to establish clear standards for code, testing, documentation and organization.",
+         "I collaborated with some team members to create reusable code modules and various templates to streamline repetitive tasks.",
+         "I identified and resolved errors that were impacting the performance of some projects.",
+         "I effectively communicated with the client to ensure that their needs and expectations were met, maintaining a high level of client satisfaction"
+      ],
+      "stack": [
+         "Angular",
+         "CassandraDB",
+         "NestJS",
+         "Docker"
+      ]
+   },
+   {
+      "id": 2,
+      "name": "Starfiled",
+      "about": "Starfiled is company located in Honduras that offers IT related outsourcing services to several companies around the country.",
+      "activities": [
+         "Development and integration of screens and features for the client's internal administration system using the Angular framework and related technologies.",
+         "Analysis and planning for the construction of optimal solutions along the other members of the development team",
+         "Development of REST APIs and microservices applying SOLID principles with Nestjs, CassandraDB, Kafka and MinIO",
+         "Unit testing using Jest for NestJS and Jazmine for Angular, integration testing and documentation for both front-end and back-end applications",
+         "Dockerization of all front-end and back-end projects"
+      ],
+      "achievents": [
+         "I worked with the team to establish clear standards for code, testing, documentation and organization.",
+         "I collaborated with some team members to create reusable code modules and various templates to streamline repetitive tasks."
+      ],
+      "stack": [
+         "Angular",
+         "CassandraDB",
+         "NestJS",
+         "Docker"
+      ]
+   },
+   {
+      "id": 3,
+      "name": "Noneas",
+      "about": "Noneas is company located in Honduras that offers IT related outsourcing services to several companies around the country.",
+      "activities": [
+         "Development and integration of screens and features for the client's internal administration system using the Angular framework and related technologies.",
+         "Analysis and planning for the construction of optimal solutions along the other members of the development team",
+         "Development of REST APIs and microservices applying SOLID principles with Nestjs, CassandraDB, Kafka and MinIO",
+         "Unit testing using Jest for NestJS and Jazmine for Angular, integration testing and documentation for both front-end and back-end applications",
+         "Dockerization of all front-end and back-end projects"
+      ],
+      "achievents": [
+         "I worked with the team to establish clear standards for code, testing, documentation and organization.",
+         "I collaborated with some team members to create reusable code modules and various templates to streamline repetitive tasks.",
+         "I identified and resolved errors that were impacting the performance of some projects.",
+         "I effectively communicated with the client to ensure that their needs and expectations were met, maintaining a high level of client satisfaction"
+      ],
+      "stack": [
+         "Angular",
+         "CassandraDB",
+         "NestJS",
+         "Docker"
+      ]
+   }
+]

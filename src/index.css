@@ -38,9 +38,7 @@ main {
 }
 
 nav {
-   transition:
-      opacity 600ms,
-      visibility 600ms;
+   transition: opacity 600ms, visibility 600ms;
 }
 
 html {
@@ -70,6 +68,16 @@ html {
       margin-bottom: 40px !important;
       max-width: 700px !important;
    }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+   display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
 }
 
 .splide__pagination__page {

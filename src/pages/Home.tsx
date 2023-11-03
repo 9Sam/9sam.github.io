@@ -5,7 +5,7 @@ import Skills from "../components/sections/Skills";
 import Contact from "../components/sections/Contact";
 import ProjectsMain from "../components/sections/ProjectsMain";
 import HomeSection from "../components/sections/homeSection/HomeSection";
-import Experience from "../components/sections/Experience";
+import Experience from "../components/sections/experienceSection/Experience";
 import "aos/dist/aos.css";
 
 function Home() {

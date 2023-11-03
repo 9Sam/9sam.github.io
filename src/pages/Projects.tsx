@@ -1,7 +1,7 @@
 import ProjectCard from "../components/features/ProjectCard";
 import Title from "../components/shared/Title";
 import data from "../data/projects.json";
-import { ProjectI } from "../interfaces/Project";
+import { ProjectI } from "../interfaces/project.interface";
 
 function Projects() {
    data as ProjectI[];
