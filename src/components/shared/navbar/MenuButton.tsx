@@ -1,13 +1,13 @@
 import { MdMenu } from "react-icons/md";
 import { useMenuContext } from "../../../context/MenuContext";
 import { useEffect, useRef } from "react";
+import { IsOpenStateT } from "../../../types";
 
 type Props = {
-   isOpen: boolean;
-   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+   navbarState: IsOpenStateT;
 };
 
-function MenuButton({ isOpen, setIsOpen }: Props) {
+function MenuButton({ navbarState}: Props) {
    const buttonRef = useRef<HTMLButtonElement | null>(null);
    const { setMenuButtonRef } = useMenuContext();
 
@@ -17,7 +17,7 @@ function MenuButton({ isOpen, setIsOpen }: Props) {
 
    return (
       <button
-         onClick={() => setIsOpen(!isOpen)}
+         onClick={() => navbarState.setIsOpen(!navbarState.isOpen)}
          data-collapse-toggle="mobile-menu"
          type="button"
          className="ml-3 inline-flex items-center rounded-lg p-2 text-sm hover:fill-l-primary focus:outline-none dark:fill-white dark:text-white  dark:hover:fill-d-primary dark:focus:ring-d-primary md:hidden"

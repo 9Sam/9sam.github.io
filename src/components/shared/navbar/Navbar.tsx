@@ -5,6 +5,7 @@ import { MenuContextProvider } from "../../../context/MenuContext";
 import MenuButton from "./MenuButton";
 import MenuItems from "./MenuItems";
 import Logo from "./Logo";
+import { IsOpenStateT } from "../../../types";
 
 function Navbar() {
    const { isDarkMode } = useDarkMode();
@@ -16,6 +17,11 @@ function Navbar() {
       window.scrollTo(0, 0);
    }, [location.pathname]);
 
+   const navbarState: IsOpenStateT = {
+      isOpen,
+      setIsOpen,
+   };
+
    return (
       <MenuContextProvider>
          <nav
@@ -24,8 +30,8 @@ function Navbar() {
          >
             <div className="container mx-auto flex flex-wrap items-center justify-between">
                <Logo isDarkMode={isDarkMode} />
-               <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-               <MenuItems isOpen={isOpen} setIsOpen={setIsOpen} />
+               <MenuButton navbarState={navbarState} />
+               <MenuItems navbarState={navbarState} />
             </div>
          </nav>
       </MenuContextProvider>

@@ -6,14 +6,15 @@ import LanguageButton from "../buttons/LanguageButton";
 import useIntersectionObserver from "../../../hooks/useActiveLinkOnScroll";
 import useClickOutside from "../../../hooks/useClickOutside";
 import { useMenuContext } from "../../../context/MenuContext";
+import { IsOpenStateT } from "../../../types";
 
 type Props = {
-   isOpen: boolean;
-   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+   navbarState: IsOpenStateT
 };
 
-function MenuItems({ isOpen, setIsOpen }: Props) {
+function MenuItems({ navbarState }: Props) {
    const ulRef = useRef<HTMLDivElement | null>(null);
+   const { isOpen, setIsOpen } = navbarState;
    const [currentPathname, setCurrentPathname] = useState("");
    const [activeSection, setActiveSection] = useState(null);
    const { menuButtonRef } = useMenuContext();
@@ -27,7 +28,7 @@ function MenuItems({ isOpen, setIsOpen }: Props) {
 
    const scrollWithOffset = (el: HTMLElement, isHome: boolean) => {
       const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
-      let yOffset = isHome ? 0 : -60;
+      let yOffset = isHome ? 0 : -80;
       if (window.innerWidth <= 768) yOffset = -60;
       window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
    };
@@ -63,7 +64,7 @@ function MenuItems({ isOpen, setIsOpen }: Props) {
    return (
       <m.div
          animate={{}}
-         className={`navbar w-full transition md:block md:w-auto ${
+         className={`navbar w-full transition duration-75 md:block md:w-auto ${
             isOpen ? "top-20 opacity-100" : "top-[-490px]"
          } opacity-0 md:opacity-100 `}
          id="mobile-menu"
@@ -99,8 +100,8 @@ function MenuItems({ isOpen, setIsOpen }: Props) {
                );
             })}
             <div className="flex w-full flex-col md:flex-row">
-               <DarkModeButton />
-               <LanguageButton />
+               <DarkModeButton navbarState={navbarState} />
+               <LanguageButton navbarState={navbarState} />
             </div>
          </ul>
       </m.div>

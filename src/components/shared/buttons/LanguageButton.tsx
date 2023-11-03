@@ -2,6 +2,7 @@ import { m } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { MdLanguage } from "react-icons/md";
 import useClickOutside from "../../../hooks/useClickOutside";
+import { IsOpenStateT } from "../../../types";
 
 interface Language {
    name: string;
@@ -9,7 +10,11 @@ interface Language {
    icon: string;
 }
 
-function LanguageButton() {
+type Props = {
+   navbarState: IsOpenStateT;
+};
+
+function LanguageButton({ navbarState }: Props) {
    const buttonRef = useRef<HTMLButtonElement | null>(null);
    const ulRef = useRef<HTMLUListElement | null>(null);
    const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +25,11 @@ function LanguageButton() {
       { name: "Porugues", code: "pr", icon: "" },
    ];
 
-   const handleLanguageClick = (target: any) => {};
+   const handleLanguageClick = (target: any) => {
+      navbarState.setIsOpen(false);
+      localStorage.setItem("language", target.getAttribute("data-code"));
+      window.location.reload();
+   };
 
    useClickOutside([ulRef, buttonRef, isOpen, setIsOpen]);
 

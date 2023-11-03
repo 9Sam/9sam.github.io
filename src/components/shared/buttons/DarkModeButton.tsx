@@ -1,12 +1,17 @@
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { m } from "framer-motion";
 import { useDarkMode } from "../../../context/DarkModeContext";
-import { useLayoutEffect } from "react";
+import { IsOpenStateT } from "../../../types";
 
-function DarkModeButton() {
+type Props = {
+   navbarState: IsOpenStateT;
+};
+
+function DarkModeButton({ navbarState }: Props) {
    const { isDarkMode, setDarkMode } = useDarkMode();
 
    const toggleDarkMode = () => {
+      navbarState.setIsOpen(false);
       setDarkMode(!isDarkMode);
    };
 
