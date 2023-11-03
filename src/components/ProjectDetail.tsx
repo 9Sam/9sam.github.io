@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { ImageI } from "../interfaces/Project";
+import { ImageI } from "../interfaces/project.interface";
 import {
    IoIosArrowDropdownCircle,
    IoIosArrowDropupCircle,

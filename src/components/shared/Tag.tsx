@@ -5,7 +5,7 @@ import {
    othersItems,
 } from "../../utils/Technologies";
 import { RiHashtag } from "react-icons/ri";
-import { TechnologyI } from "../../types";
+import { TechnologyI } from "../../interfaces/technology.interface";
 
 interface PropsI {
    children: string;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ProjectI } from "../../interfaces/Project";
+import { ProjectI } from "../../interfaces/project.interface";
 import { IoOpenOutline } from "react-icons/io5";
 import Button from "../shared/buttons/Button";
 import Tag from "../shared/Tag";
