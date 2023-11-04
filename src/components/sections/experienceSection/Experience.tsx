@@ -7,7 +7,7 @@ function Experience() {
       <section
          id="experience"
          data-section
-         className={`${sectionClasses} mx-1 md:mx-auto`}
+         className={`${sectionClasses} mx-1 md:mx-auto relative`}
       >
          <Title title="Experience" />
          <ExperienceContainer />

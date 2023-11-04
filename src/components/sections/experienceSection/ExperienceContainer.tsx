@@ -9,7 +9,7 @@ function ExperienceContainer() {
    const experiences: ExperienceI[] = experienceData as ExperienceI[];
 
 
-   return <div className="flex flex-col md:flex-row w-full h-auto bg-white blur-effect rounded shadow">
+   return <div className="flex flex-col md:flex-row w-full h-auto rounded">
       <ExperienceSidebar activeSection={activeSection} setActiveSection={setActiveSection}/>
       <ExperienceContent experience={experiences[activeSection - 1]}/>
    </div>

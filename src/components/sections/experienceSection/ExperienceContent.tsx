@@ -28,14 +28,14 @@ const listItems = ({ title, items }: { title: string; items: string[] }) => {
 
 function ExperienceContent({ experience }: Props) {
    return (
-      <div className="p-6">
+      <div className="p-6 spotlight">
          <h2 className="pt-4 text-2xl font-bold">{experience.name}</h2>
          <p className="pt-4 mb-4">{experience.about}</p>
 
          {listItems({ title: "Activities", items: experience.activities })}
          {listItems({ title: "Achivements", items: experience.achievents })}
 
-         <div className="flex gap-2 py-6">
+         <div className="flex flex-wrap gap-2 py-6">
             {experience.stack.map((item, index) => (
                <Tag size="w-4 h-4">{item}</Tag>
             ))}

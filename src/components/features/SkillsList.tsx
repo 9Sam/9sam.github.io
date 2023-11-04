@@ -10,7 +10,7 @@ const h2Classes =
 
 function SkillsList({ items }: Props) {
    return (
-      <div className="blur-effect w-full rounded p-2 text-center shadow md:w-[320px]">
+      <div className="spotlight w-full rounded p-2 text-center shadow md:w-[320px]">
          <h2 className={h2Classes}>{items.title}</h2>
          <div className="pb-10 text-lg text-dark dark:text-light-gray md:text-xl">
             {items.technologies

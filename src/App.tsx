@@ -11,6 +11,7 @@ import { loadSlim } from "tsparticles-slim";
 import Particles from "react-particles";
 import { useDarkMode } from "./context/DarkModeContext";
 import { getTsConfig } from "./utils/tsParticlesConfiguration";
+import MainButton from "./components/features/MainButton";
 
 function App() {
    const particlesInit = useCallback(async (engine: Engine) => {
@@ -34,8 +35,9 @@ function App() {
                options={getTsConfig(isDarkMode)}
             />
             <BrowserRouter>
-               <main className="min-h-scree flex flex-col">
+               <div className="min-h-scree flex flex-col">
                   <Navbar />
+                  <MainButton />
                   <div className="">
                      <Routes>
                         <Route path="/" element={<Home />} />
@@ -43,7 +45,7 @@ function App() {
                      </Routes>
                   </div>
                   <Footer />
-               </main>
+               </div>
             </BrowserRouter>
          </>
       </LazyMotion>

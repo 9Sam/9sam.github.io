@@ -22,6 +22,8 @@ function Navbar() {
       setIsOpen,
    };
 
+   
+
    return (
       <MenuContextProvider>
          <nav

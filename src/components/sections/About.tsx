@@ -8,7 +8,7 @@ import { HiComputerDesktop } from "react-icons/hi2/index";
 import Computer from "../../icons/green-computer.svg?react";
 
 const iconsClasses =
-   "w-12 h-12 my-auto fill-l-secondary dark:fill-d-secondary animate-pulse";
+   "w-12 h-full fill-l-secondary dark:fill-d-secondary animate-pulse";
 
 const showCards = [
    {
@@ -47,7 +47,7 @@ function About() {
                );
             })}
          </div>
-         <div className="blur-effect z-10 h-auto rounded-md text-center text-dark  text-opacity-70 shadow">
+         <div className="spotlight z-10 h-auto rounded-md text-center text-dark  text-opacity-70 shadow-lg">
             <div className="flex flex-col md:flex-row">
                <Computer
                   className="computer-icon fillit h-full w-full"

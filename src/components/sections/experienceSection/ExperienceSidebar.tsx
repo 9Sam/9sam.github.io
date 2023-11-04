@@ -51,7 +51,7 @@ function ExperienceSidebar({ activeSection, setActiveSection }: Props) {
 
    return (
       <section
-         className="scrollbar-hide w-full overflow-auto rounded bg-cyan-400 bg-opacity-5 shadow md:w-2/3 lg:w-2/6"
+         className="relative scrollbar-hide w-full border border-slate-200 border-opacity-5 overflow-auto rounded bg-cyan-400 bg-opacity-5 shadow md:w-2/3 lg:w-2/6 :before:w-full :before:h-full :before:absolute :before:top-0 :before:left-0 :before:bg-red-500 :before:z-10"
          ref={sectionRef}
       >
          <div
@@ -61,7 +61,7 @@ function ExperienceSidebar({ activeSection, setActiveSection }: Props) {
                return (
                   <div
                      key={section.id}
-                     className={`cursor-pointer select-none border-l-4 border-transparent p-4 hover:bg-cyan-100  hover:bg-opacity-40 dark:hover:bg-cyan-100 dark:hover:bg-opacity-5 ${section.id === activeSection ? "text-l-primary dark:text-d-primary" : ""}`}
+                     className={`cursor-pointer select-none border-l-4 border-transparent p-4 hover:bg-cyan-100  hover:bg-opacity-40 active:bg-none dark:hover:bg-cyan-100 dark:hover:bg-opacity-5 ${section.id === activeSection ? "text-l-primary dark:text-d-primary" : ""}`}
                      onClick={(e) => handleClick(section.id, e)}
                   >
                      {section.name}

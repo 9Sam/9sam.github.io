@@ -25,7 +25,7 @@ import {
    SiJira,
    SiMaterialui,
 } from "react-icons/si";
-import { TechnologyI } from "../types";
+import { TechnologyI } from "../interfaces/technology.interface";
 
 const iconClasses = "w-4 h-4 mx-auto float-right";
 
