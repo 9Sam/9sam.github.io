@@ -13,7 +13,7 @@ export const getTsConfig = (darkMode: boolean): any => {
                mode: "push",
             },
             onHover: {
-               enable: true,
+               enable: false,
                mode: "repulse",
             },
             resize: true,
@@ -36,7 +36,7 @@ export const getTsConfig = (darkMode: boolean): any => {
             color: "#A1A1A1",
             distance: 150,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.15,
             width: 1,
          },
          move: {
@@ -57,7 +57,7 @@ export const getTsConfig = (darkMode: boolean): any => {
             value: 80,
          },
          opacity: {
-            value: 0.3,
+            value: 0.15,
          },
          shape: {
             type: "circle",
