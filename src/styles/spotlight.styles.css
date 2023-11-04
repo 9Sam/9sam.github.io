@@ -1,0 +1,39 @@
+.spotlight {
+   @apply shadow bg-opacity-30 bg-slate-200 dark:bg-[#10101d] dark:bg-opacity-90;
+   border-radius: 5px;
+   border-color: rgba(255, 255, 255, 0.1);
+   border-width: 0px 1px 1px 0px;
+   opacity: 0.8;
+   border-style: solid;
+   position: relative;
+   overflow: hidden;
+}
+
+.spotlight {
+   --left: 0px;
+   --top: 0px;
+}
+
+.spotlight::before {
+   @apply bg-l-secondary dark:bg-l-primary border-white;
+   content: "";
+   border-radius: 50%;
+   width: 10rem;
+   height: 10rem;
+   position: absolute;
+   left: var(--left);
+   top: var(--top);
+   transform: translate(-50%, -50%) scale(1.5);
+   opacity: 0;
+
+   filter: blur(50px);
+   z-index: -50;
+}
+
+.spotlight:hover::before {
+   opacity: 0.1;
+}
+
+.dark .spotlight:hover::before {
+   opacity: 0.2;
+}
