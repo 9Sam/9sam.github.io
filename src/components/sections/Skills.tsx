@@ -8,6 +8,8 @@ import Title from "../shared/Title";
 import { sectionClasses } from "../../utils/themeClasses";
 import SkillsList from "../features/SkillsList";
 import { ItemsT } from "../../types";
+import Spotlight from "../shared/Spotlight";
+import { SpotlightCard } from "../shared/SpotlightCard";
 
 const items: ItemsT[] = [
    { title: "Frontend", technologies: frontendItems },
@@ -22,12 +24,17 @@ function Skills() {
          <div className="flex justify-center">
             <SplideTech />
          </div>
-         <div className="flex justify-center">
-            <div className="z-10 flex w-full max-w-5xl flex-col justify-center gap-4 md:flex-row md:flex-wrap md:gap-6 lg:gap-x-8">
+         <div>
+            <Spotlight className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                {items.map((item: ItemsT, index: number) => (
-                  <SkillsList key={index} items={item} />
+                  <SpotlightCard
+                     key={index}
+                     className="mx-auto w-full max-w-sm "
+                  >
+                     <SkillsList key={index} items={item} />
+                  </SpotlightCard>
                ))}
-            </div>
+            </Spotlight>
          </div>
       </section>
    );

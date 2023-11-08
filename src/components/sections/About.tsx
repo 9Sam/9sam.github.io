@@ -6,6 +6,8 @@ import { BiTestTube } from "react-icons/bi/index";
 import { HiDatabase } from "react-icons/hi/index";
 import { HiComputerDesktop } from "react-icons/hi2/index";
 import Computer from "../../icons/green-computer.svg?react";
+import Spotlight from "../shared/Spotlight";
+import { SpotlightCard } from "../shared/SpotlightCard";
 
 const iconsClasses =
    "w-12 h-full fill-l-secondary dark:fill-d-secondary animate-pulse";
@@ -35,30 +37,32 @@ function About() {
    return (
       <section id="about" data-section className={sectionClasses}>
          <Title title="About me" />
-         <div className="my-10 flex flex-col gap-5 md:flex-row">
-            {showCards.map((card, _index) => {
+         <Spotlight className="group grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-4">
+            {showCards.map((card, index) => {
                return (
-                  <ShowCardMain
-                     key={card.id}
-                     text={card.text}
-                     icon={card.icon}
-                     alt={card.imageAlt}
-                  />
+                  <SpotlightCard key={index} className="col-span-full md:col-span-2 lg:col-span-1">
+                     <ShowCardMain
+                        key={card.id}
+                        text={card.text}
+                        icon={card.icon}
+                        alt={card.imageAlt}
+                     />
+                  </SpotlightCard>
                );
             })}
-         </div>
-         <div className="spotlight z-10 h-auto rounded-md text-center text-dark  text-opacity-70 shadow-lg">
-            <div className="flex flex-col md:flex-row">
-               <Computer
-                  className="computer-icon fillit h-full w-full"
-                  color="#1f2937"
-                  fill="red"
-               />
-               <p className="max-w-2/3 m-auto mx-auto p-5 text-lg dark:text-light-gray">
-                  <i>{MessagesE.ABOUT_ME}</i>
-               </p>
-            </div>
-         </div>
+            <SpotlightCard key={3} className="col-span-full">
+               <div className="flex flex-col md:flex-row">
+                  <Computer
+                     className="computer-icon h-auto w-full md:w-1/3"
+                     color="#1f2937"
+                     fill="red"
+                  />
+                  <p className="max-w-2/3 m-auto mx-auto p-5 text-lg text-dark dark:text-light-gray md:w-2/3">
+                     <i>{MessagesE.ABOUT_ME}</i>
+                  </p>
+               </div>
+            </SpotlightCard>
+         </Spotlight>
       </section>
    );
 }
