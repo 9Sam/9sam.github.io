@@ -10,7 +10,7 @@ img.src = "/icons/code-svgrepo-com 1.svg";
 function HomeSection() {
    return (
       <header
-         className="relative mb-20 flex h-screen max-h-screen w-screen md:p-10"
+         className="relative mb-20 flex h-screen max-h-screen w-screen md:p-10 z-30"
          data-section
          id="home"
       >

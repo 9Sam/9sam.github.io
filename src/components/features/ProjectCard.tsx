@@ -24,7 +24,7 @@ function ProjectCard({ project }: projectT) {
 
    if (project) {
       return (
-         <div className="z-10 h-auto w-[350px] rounded-md bg-white shadow-md dark:border dark:border-d-primary dark:border-opacity-50 dark:bg-dark">
+         <div className="z-10 h-auto w-auto max-w-sm mx-auto rounded-md bg-white shadow-md dark:border dark:border-d-primary dark:border-opacity-50 dark:bg-dark">
             <div className="cursor-pointer" onClick={() => setState(true)}>
                <ProjectWindow
                   imageSrc={project.front ? project.front : ""}
@@ -32,7 +32,7 @@ function ProjectCard({ project }: projectT) {
                   bottomColor={`${project.window?.bottomColor}`}
                />
             </div>
-            <div className="px-5 pt-3 md:h-56">
+            <div className="px-5 pt-3 h-56">
                <a href="#">
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-light-gray">
                      {project.name}

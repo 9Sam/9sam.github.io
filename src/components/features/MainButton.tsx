@@ -26,7 +26,7 @@ function MainButton() {
       <AnimatePresence>
          {isVisible && (
             <m.div
-               className="group z-20"
+               className={`group z-20 hidden md:block`}
                initial={{ opacity: 0 }}
                animate={{ opacity: isVisible ? 1 : 0 }}
                exit={{ opacity: 0, transition: { duration: 0.5 } }} // Define the exit animation

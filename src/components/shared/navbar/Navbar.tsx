@@ -27,7 +27,7 @@ function Navbar() {
    return (
       <MenuContextProvider>
          <nav
-            className="scrollbar-hide fixed top-0 left-0 z-20 w-full bg-white px-2 py-2.5 shadow dark:bg-dark sm:px-4"
+            className="scrollbar-hide fixed top-0 left-0 z-50 w-full bg-white px-2 py-2.5 shadow dark:bg-dark sm:px-4"
             ref={navRef}
          >
             <div className="container mx-auto flex flex-wrap items-center justify-between">
